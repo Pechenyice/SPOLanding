@@ -1,12 +1,13 @@
 window.onload = () => {
     var navigationElems = document.getElementsByClassName('navigationIconBlock');
     var connections = document.getElementsByClassName('navigationConnection');
+    var activeBlock = 0;
 
     navigationElems[0].addEventListener('mouseover', () => {
         navigationElems[0].getElementsByClassName('navigationIconMainModel')[0].style.backgroundColor = 'white';
     });
     navigationElems[0].addEventListener('mouseleave', () => {
-        if (!navigationElems[0].classList.contains('navigationActive')) navigationElems[0].getElementsByClassName('navigationIconMainModel')[0].style.backgroundColor = '#393E46';
+        if (!navigationElems[0].classList.contains('navigationActive') && activeBlock < 0) navigationElems[0].getElementsByClassName('navigationIconMainModel')[0].style.backgroundColor = '#393E46';
     });
     
     navigationElems[1].addEventListener('mouseover', () => {
@@ -16,7 +17,7 @@ window.onload = () => {
     });
     navigationElems[1].addEventListener('mouseleave', () => {
         if (!navigationElems[0].classList.contains('navigationActive')) navigationElems[0].getElementsByClassName('navigationIconMainModel')[0].style.backgroundColor = '#393E46';
-        if (!navigationElems[1].classList.contains('navigationActive')) {
+        if (!navigationElems[1].classList.contains('navigationActive') && activeBlock < 2) {
             navigationElems[1].getElementsByClassName('navigationIconMainModel')[0].style.backgroundColor = '#393E46';
             connections[0].style.backgroundColor = '#393E46';
         } else {
@@ -35,10 +36,14 @@ window.onload = () => {
     navigationElems[2].addEventListener('mouseleave', () => {
         if (!navigationElems[0].classList.contains('navigationActive')) navigationElems[0].getElementsByClassName('navigationIconMainModel')[0].style.backgroundColor = '#393E46';
         if (!navigationElems[1].classList.contains('navigationActive')) navigationElems[1].getElementsByClassName('navigationIconMainModel')[0].style.backgroundColor = '#393E46';
-        if (!navigationElems[2].classList.contains('navigationActive')) {
+        if (!navigationElems[2].classList.contains('navigationActive') && activeBlock < 3) {
             navigationElems[2].getElementsByClassName('navigationIconMainModel')[0].style.backgroundColor = '#393E46';
             for (var i = 0; i < connections.length - 1; i++) {
                 connections[i].style.backgroundColor = '#393E46';
+            }
+            if (activeBlock > 0) {
+                navigationElems[0].getElementsByClassName('navigationIconMainModel')[0].style.backgroundColor = 'white';
+                connections[0].style.backgroundColor = 'white';
             }
         } else {
             navigationElems[0].getElementsByClassName('navigationIconMainModel')[0].style.backgroundColor = 'white';
@@ -62,11 +67,20 @@ window.onload = () => {
         if (!navigationElems[0].classList.contains('navigationActive')) navigationElems[0].getElementsByClassName('navigationIconMainModel')[0].style.backgroundColor = '#393E46';
         if (!navigationElems[1].classList.contains('navigationActive')) navigationElems[1].getElementsByClassName('navigationIconMainModel')[0].style.backgroundColor = '#393E46';
         if (!navigationElems[2].classList.contains('navigationActive')) navigationElems[2].getElementsByClassName('navigationIconMainModel')[0].style.backgroundColor = '#393E46';
-        if (!navigationElems[3].classList.contains('navigationActive')) {
+        if (!navigationElems[3].classList.contains('navigationActive') && activeBlock < 4) {
             navigationElems[3].getElementsByClassName('navigationIconMainModel')[0].style.backgroundColor = '#393E46';
             for (var i = 0; i < connections.length; i++) {
                 connections[i].style.backgroundColor = '#393E46';
             }
+            if (activeBlock > 0) {
+                navigationElems[0].getElementsByClassName('navigationIconMainModel')[0].style.backgroundColor = 'white';
+                connections[0].style.backgroundColor = 'white';
+                if (activeBlock > 1) {
+                    navigationElems[1].getElementsByClassName('navigationIconMainModel')[0].style.backgroundColor = 'white';
+                    connections[1].style.backgroundColor = 'white';
+                }
+            }
+            
         } else {
             navigationElems[0].getElementsByClassName('navigationIconMainModel')[0].style.backgroundColor = 'white';
             navigationElems[1].getElementsByClassName('navigationIconMainModel')[0].style.backgroundColor = 'white';
@@ -78,6 +92,7 @@ window.onload = () => {
     });
 
     navigationElems[0].addEventListener('click', () => {
+        activeBlock = 0;
         if (!navigationElems[0].classList.contains('navigationActive')) navigationElems[0].classList.toggle('navigationActive');
         for (var i = 1; i < navigationElems.length; i++) {
             if (navigationElems[i].classList.contains('navigationActive')) {
@@ -94,6 +109,7 @@ window.onload = () => {
     });
 
     navigationElems[1].addEventListener('click', () => {
+        activeBlock = 1;
         if (!navigationElems[1].classList.contains('navigationActive')) navigationElems[1].classList.toggle('navigationActive');
         for (var i = 0; i < navigationElems.length; i++) {
             if (i == 1) continue;
@@ -110,6 +126,7 @@ window.onload = () => {
     });
 
     navigationElems[2].addEventListener('click', () => {
+        activeBlock = 2;
         if (!navigationElems[2].classList.contains('navigationActive')) navigationElems[2].classList.toggle('navigationActive');
         for (var i = 0; i < navigationElems.length; i++) {
             if (i == 2) continue;
@@ -125,6 +142,7 @@ window.onload = () => {
     });
 
     navigationElems[3].addEventListener('click', () => {
+        activeBlock = 3;
         if (!navigationElems[3].classList.contains('navigationActive')) navigationElems[3].classList.toggle('navigationActive');
         for (var i = 0; i < navigationElems.length; i++) {
             if (i == 3) continue;
