@@ -242,6 +242,14 @@ body {
     justify-content: center;
     align-items: center;
     border: 3px white solid;
+    transition: .3s;
+    cursor: pointer;
+}
+
+#mainBlockButton:hover {
+    transition: .3s;
+    background-color: white;
+    color: #393E46;
 }
 
 @keyframes navigationRunner { 
