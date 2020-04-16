@@ -1,0 +1,41 @@
+.blockLogo {
+    width: max-content;
+    height: max-content;
+}
+
+.blockLogo h1 {
+    margin: 0;
+    padding: 0;
+    color: #853898;
+    font-family: 'Roboto Slab', serif;
+    font-size: 36px;
+}
+
+.blockLogo #firstUnderline {
+    width: 0;
+    height: 3px;
+    margin-left: 50%;
+    background-color: #853898;
+    margin-top: 8px;
+    transition: .3s;
+}
+
+.blockLogo #secondUnderline{
+    width: 0;
+    height: 2px;
+    margin-left: 50%;
+    background-color: #853898;
+    margin-top: 6px;
+    transition: .3s;
+}
+
+/* .blockLogo:hover #firstUnderline {
+    margin-left: 0;
+    width: 100%;
+    transition: .3s;
+}
+.blockLogo:hover #secondUnderline {
+    margin-left: 20%;
+    width: 60%;
+    transition: .3s;
+} */
