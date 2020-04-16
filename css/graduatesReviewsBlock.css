@@ -1,0 +1,121 @@
+#graduates-reviews {
+	background-color: #C1C4D5;
+	padding-top: 100px;
+	padding-bottom: 50px;
+}
+
+#graduates-reviews-title {
+	width: 386px;
+	margin: auto;
+    font-family: 'Roboto Slab', serif;
+    font-size: 36px;
+    color: #385098;
+    margin-bottom: 100px;
+}
+
+#graduates-reviews-title div:first-child {
+	border-bottom: solid 4px #385098;
+	text-align: center;
+}
+
+#graduates-reviews-title div:last-child {
+	width: 204px;
+	content: ' ';
+	margin: auto;
+	padding-top: 8px;
+	border-bottom: solid 4px #385098;
+}
+
+#graduates-reviews-content {
+	background-color: #C1C4D5;
+	display: flex;
+	justify-content: center;
+}
+
+.graduate-review {
+	width: 360px;
+	height: 360px;
+	margin-right: 40px;
+}
+
+.graduate-review:last-child{
+	margin-right: 0;
+}
+
+
+.graduate-review-circle {
+	border-radius: 50%;
+	margin: auto;
+	padding: 5%;
+}
+
+.graduate-review-circle-first {
+	background-color: #341C5C;
+
+	width: 90%;
+	height: 90%;
+}
+
+.graduate-review-circle-second {
+	background-color: #281648;
+
+	width: 90%;
+	height: 90%;
+}
+
+.graduate-review-circle-third {
+	background-color: #1D0F35;
+
+	width: 90%;
+	height: 90%;
+}
+
+.graduate-review-header {
+	font-size: 80px;
+	color: #9598A0;
+	margin: 0;
+	margin-top: -40px;
+	padding: 0;
+	text-align: center;
+}
+
+.graduate-review-body {
+	padding: 0;
+	margin: auto;
+	margin-top: 5%;
+	width: 80%;
+	height: 60%;
+	font-size: 20px;
+	color: white;
+	font-family: 'Amatic SC', cursive;
+}
+
+.graduate-review-footer {
+	display: flex;
+	width: 55%;
+	margin: auto;
+	padding: 0;
+	font-family: 'Amatic SC', cursive;
+	font-size: 16px;
+	color: white;
+}
+
+.graduate-review-footer-avatar {
+	width: 50px;
+}
+
+.graduate-review-footer-avatar img{
+	border-radius: 50%;
+}
+
+.graduate-review-footer-info {
+}
+
+.graduate-review-footer-info-name {
+
+}
+
+.graduate-review-footer-info-work {
+	font-size: 14px;
+	color: #9598A0;
+}
