@@ -1,21 +1,25 @@
+#feedback-block-background {
+	background-image: url(../assets/feedback_background.png);
+}
+
 #feedback-block {
 	width: 800px;
 	margin: auto;
 	padding-top: 60px;
-	margin-bottom: 60px;
+	padding-bottom: 60px;
 	font-family: 'Roboto Slab', serif;
 }
 
 #feedback-block-title {
 	text-align: center;
 	color: #853898;
-	font-size: 40px;
+	font-size: 42px;
 }
 
 #feedback-block-subtitle {
 	text-align: center;
 	color: #853898;
-	font-size: 20px;
+	font-size: 22px;
 }
 
 #feedback-block div:last-child {
@@ -25,7 +29,7 @@
 }
 
 #feedback-block-input {
-	width: 358px;
+	width: 360px;
 	padding: 12px;
 	border: solid 4px #853898;
 	margin-right: 20px;

@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="css/programmBlock.css">
     <link rel="stylesheet" href="css/graduatesReviewsBlock.css">
     <link rel="stylesheet" href="css/feedbackBlock.css">
+    <link rel="stylesheet" href="css/footerBlock.css">
     <title>Document</title>
 </head>
 <body>
@@ -186,24 +187,48 @@
             </div>              
         </div>
 
-        <div id="feedback-block">
-            <form>
-                <div id="feedback-block-title">ХОЧЕШЬ СТАТЬ СТУДЕНТОМ?</div>
-                <div id="feedback-block-subtitle">
-                    Оставь свою почту, чтобы быть в курсе новостей первым!
+        <div id="feedback-block-background">
+            <div id="feedback-block">
+                <form>
+                    <div id="feedback-block-title">ХОЧЕШЬ СТАТЬ СТУДЕНТОМ?</div>
+                    <div id="feedback-block-subtitle">
+                        Оставь свою почту, чтобы быть в курсе новостей первым!
+                    </div>
+                    <div>
+                        <input 
+                            type="text" 
+                            name="email" 
+                            id="feedback-block-input" 
+                            placeholder="Введите адрес электронной почты"
+                            autocomplete="off">
+                        <button id="feedback-block-submit" type="">
+                            ПОЛУЧИТЬ РАССЫЛКУ!
+                        </button>
+                    </div>
+                </form>
+            </div>            
+        </div>
+
+        <div id="footer-block-background">
+            <div id="footer-block">
+                <div id="footer-block-links">
+                    <ul>
+                        <li><a href="#">О НАС</a></li>
+                        <li><a href="#">ПРОГРАММА</a></li>
+                        <li><a href="#">НАШИ ВЫПУСКНИКИ</a></li>
+                        <li><a href="#">ОБРАТНАЯ СВЯЗЬ</a></li>
+                    </ul>
                 </div>
-                <div>
-                    <input 
-                        type="text" 
-                        name="email" 
-                        id="feedback-block-input" 
-                        placeholder="Введите адрес электронной почты"
-                        autocomplete="off">
-                    <button id="feedback-block-submit" type="">
-                        ПОЛУЧИТЬ РАССЫЛКУ!
-                    </button>
+                <div id="footer-block-location">
+                    <p>
+                        <img width="14" src="assets/location.png">
+                        Санкт-Петербург, Песочная набережная, д. 14
+                    </p>
+                    <p>
+                        © 2020 ИТМО ФСПО 2.0, Все права защищены
+                    </p>
                 </div>
-            </form>
+            </div>
         </div>
 
     </div>
