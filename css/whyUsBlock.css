@@ -1,0 +1,79 @@
+#why-us-block {
+	margin: auto;
+}
+
+#why-us-content {
+}
+
+#why-us-title {
+	width: 256px;
+	margin: auto;
+    font-family: 'Roboto Slab', serif;
+    font-size: 36px;
+    color: #853898;
+    margin-bottom: 60px;
+}
+
+#why-us-title div:first-child {
+	border-bottom: solid 4px #853898;
+	text-align: center;
+}
+
+#why-us-title div:last-child {
+	width: 128px;
+	margin: auto;
+	padding-top: 8px;
+	border-bottom: solid 4px #853898;
+}
+
+#why-us-list {
+	display: flex;
+	justify-content: space-around;
+}
+
+.why-us-list-item {
+	width: 300px;
+	font-family: 'Roboto Slab', serif;
+}
+
+.why-us-list-item-balls {
+	width: 210px;
+	margin: auto;
+}
+
+.why-us-list-item-big-ball {
+    width: 150px;
+    height: 150px;
+    background-color: #1B1030;
+    border-radius: 50%;
+}
+
+.why-us-list-item-small-ball {
+	margin-top: -20px;
+    margin-left: 150px;
+    width: 50px;
+    height: 50px;
+    background-color: #1B1030;
+    border-radius: 50%;
+}
+
+.why-us-list-item-border {
+	border-bottom: solid 4px #853898;
+    width: 100px;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.why-us-list-item-title {
+	font-size: 26px;
+	color: #385098;
+	text-align: center;
+}
+
+.why-us-list-item-desc {
+	font-size: 28px;
+	color: white;
+	text-align: center;
+	font-family: 'Amatic SC', cursive;
+}
