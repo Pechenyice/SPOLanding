@@ -1,0 +1,34 @@
+#footer-block-background {
+	background-color: #C1C4D5;
+	background-image: url(../assets/footer_background.png);
+}
+
+#footer-block {
+	width: 800px;
+	margin: auto;
+	overflow: auto;
+}
+
+#footer-block-links  ul {
+	list-style: none;
+    padding: 0;
+    margin: 0;
+	margin-top: 60px;
+	margin-bottom: 60px;
+    display: flex;
+    justify-content: space-evenly;
+} 
+
+#footer-block-links  ul li a { 
+	text-decoration: none;
+	color: #140828;
+	font-family: 'Roboto Slab', serif;
+	font-size: 16px;
+	border-bottom: solid 2px #140828;
+	font-weight: 100px;
+}
+
+#footer-block-location {
+	font-family: 'Roboto Slab', serif;
+	font-size: 14px;
+}

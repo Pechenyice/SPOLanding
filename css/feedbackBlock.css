@@ -1,0 +1,55 @@
+#feedback-block-background {
+	background-image: url(../assets/feedback_background.png);
+}
+
+#feedback-block {
+	width: 800px;
+	margin: auto;
+	padding-top: 60px;
+	padding-bottom: 60px;
+	font-family: 'Roboto Slab', serif;
+}
+
+#feedback-block-title {
+	text-align: center;
+	color: #853898;
+	font-size: 42px;
+}
+
+#feedback-block-subtitle {
+	text-align: center;
+	color: #853898;
+	font-size: 22px;
+}
+
+#feedback-block div:last-child {
+	margin-top: 30px;
+	display: flex;
+	justify-content: center;
+}
+
+#feedback-block-input {
+	width: 360px;
+	padding: 12px;
+	border: solid 4px #853898;
+	margin-right: 20px;
+	font-size: 18px;
+}
+
+#feedback-block-input:focus {
+	outline: none;
+}
+
+#feedback-block-submit {
+	padding: 10px;
+	background: linear-gradient(90deg, rgba(133,56,152,1) 0%, rgba(56,80,152,1) 100%);
+	border-radius: 30px;
+    color: white;
+    font-size: 18px;
+    border: 0;
+    font-family: 'Roboto Slab', serif;
+}
+
+#feedback-block-submit:hover {
+	cursor: pointer;
+}
