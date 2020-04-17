@@ -17,6 +17,7 @@
     margin-left: 50%;
     background-color: #853898;
     margin-top: 8px;
+    transition-delay: .2s !important;
     transition: .3s;
 }
 

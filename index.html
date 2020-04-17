@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">
     <link rel="stylesheet" href="css/all.css">
     <link rel="stylesheet" href="css/mainBlock.css">
     <link rel="stylesheet" href="css/programmBlock.css">
@@ -68,7 +69,7 @@
                         <div id="secondUnderline"></div>
                     </div>
                     <div id="courses">
-                        <ul>
+                        <ul id="coursesContent">
                             <li>1 курс</li>
                             <li class="leftBordered">2 курс</li>
                             <li class="leftBordered">3 курс</li>
@@ -76,21 +77,84 @@
                         </ul>
                     </div>
                     <div id="gridProgramms">
+
+                        <!-- 1 course -->
+
                         <div class="grided">Русский язык</div>
                         <div class="grided">Математика</div>
                         <div class="grided">Информатика</div>
                         <div class="grided">Иностранный язык</div>
                         <div class="grided">Литература</div>
                         <div class="grided">Астрономия</div>
-                        <div class="grided">Бжд</div>
+                        <div class="grided">БЖД</div>
                         <div class="grided">Физика</div>
                         <div class="grided">Физ-ра</div>
                         <div class="grided">Биология</div>
                         <div class="grided">История</div>
+
+                        <!-- 2 course -->
+                        
+                        <!-- <div class="grided">Теория вероятностей и математическая статистика</div>
+                        <div class="grided">Основы программирования</div>
+                        <div class="grided">Основы теории алгоритмов</div>
+                        <div class="grided">Дискретная математика</div>
+                        <div class="grided">Математическая логика</div>
+                        <div class="grided">Элементы высшей математики</div>
+                        <div class="grided">Введение в WEB</div>
+                        <div class="grided">История</div>
+                        <div class="grided">Основы проектирования баз данных</div>
+                        <div class="grided">Системное программирование</div>
+                        <div class="grided">Паттерны программирования</div>
+                        <div class="grided">Генетические технологии</div>
+                        <div class="grided">Практика рефакторинга</div>
+                        <div class="grided">Социальная психология</div>
+                        <div class="grided">Иностранный язык</div>
+                        <div class="grided">Физ-ра</div> -->
+
+                        <!-- 3 course -->
+                        
+                        <!-- <div class="grided">Прикладная статистика</div>
+                        <div class="grided">Учебная практика</div>
+                        <div class="grided">Основы машинного обучения</div>
+                        <div class="grided">Анализ данных</div>
+                        <div class="grided">Криптография</div>
+                        <div class="grided">Строение мозга и нейроны</div>
+                        <div class="grided">Основы кибербезопасности</div>
+                        <div class="grided">Безопасность БД</div>
+                        <div class="grided">Алгоритмы и графы</div>
+                        <div class="grided">Иностранный язык</div>
+                        <div class="grided">Этичный взлом</div>
+                        <div class="grided">Курсовая работа</div>
+                        <div class="grided">ЭВМ</div>
+                        <div class="grided">Философия</div>
+                        <div class="grided">Физ-ра</div> -->
+
+                        <!-- 4 course -->
+                        
+                        <!-- <div class="grided">Обработка данных с помощью ИИ</div>
+                        <div class="grided">Работа с Big Data</div>
+                        <div class="grided">Методы построения ИИ</div>
+                        <div class="grided">Креативные технологии</div>
+                        <div class="grided">Документирование проектов</div>
+                        <div class="grided">Нейротехнологии</div>
+                        <div class="grided">Обучение нейронных сетей</div>
+                        <div class="grided">Иностранный язык</div>
+                        <div class="grided">Нейроинтерфейсы</div>
+                        <div class="grided">Облачные технологии</div>
+                        <div class="grided">Виртуализация алгоритмов</div>
+                        <div class="grided">Проектная деятельность</div> -->
                     </div>
                 </div>
                 <div id="programmInfo">
-                    <p>Наведите на предмет,<br/> чтобы узнать больше о нем</p>
+                    <p id="programmInfoText">Наведите на предмет,<br/> чтобы узнать больше о нем</p>
+                    <div id="programmInfoFull">
+                        <p id="programmInfoFullIcon"><i class="fas fa-less-than-equal"></i></p>
+                        <p id="programmInfoFullName">Русский язык</p>
+                        <p id="programmInfoFullSection">Раздел: <span class="fakeLight">технические науки</span></p>
+                        <p id="programmInfoFullHours">Нагрузка: <span class="fakeLight">100 часов</span></p>
+                        <p id="programmInfoFullAbout">О программе:</p>
+                        <p id="programmInfoFullDescription">Ну это математика, что тут можно добавить, да, это надо, но если нет, то нет, а что вы еще хотите то</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -192,5 +256,6 @@
         </div>
     </div>
     <script src="js/navigation.js"></script>
+    <script src="js/programms.js"></script>
 </body>
 </html>
