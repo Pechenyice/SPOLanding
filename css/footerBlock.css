@@ -32,8 +32,14 @@
 	color: #140828;
 	font-family: 'Roboto Slab', serif;
 	font-size: 16px;
+	transition: .3s;
 	/* border-bottom: solid 2px #140828; */
 	/* font-weight: 100px; */
+}
+
+#footer-block-links  ul li a:hover { 
+	transition: .3s;
+	color: #7C3B98;
 }
 
 #footer-block-location {

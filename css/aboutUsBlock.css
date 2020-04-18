@@ -162,6 +162,7 @@ div#aboutUsBlockContain::after {
     align-items: center;
     justify-content: center;
     cursor: pointer;
+    transition: .3s;
 }
 
 #aboutApproach {
@@ -206,6 +207,7 @@ div#aboutUsBlockContain::after {
     position: absolute;
     top: 200px;
     left: 20px;
+    transition: .3s;
 }
 
 #aboutText h1{
