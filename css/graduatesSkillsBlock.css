@@ -83,20 +83,20 @@
 	bottom: 20px;
 }
 
-#graduates-skills-block .blockLogo{
+#graduates-skills-block-background .blockLogo{
     margin: 0 auto;
 	margin-bottom: 50px;
 	padding-top: 100px;
 }
 
 
-#graduates-skills-block:hover .blockLogo #firstUnderline{
+#graduates-skills-block-background:hover .blockLogo #firstUnderline{
     margin-left: 0;
     width: 100%;
     transition: .3s;
 }
 
-#graduates-skills-block:hover .blockLogo #secondUnderline{
+#graduates-skills-block-background:hover .blockLogo #secondUnderline{
     margin-left: 20%;
     width: 60%;
     transition: .3s;
@@ -135,6 +135,22 @@
 	font-family: 'Amatic SC', cursive;
 	background-color: #140828;
 	color: white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.graduates-skills-block-list-item img{
+	position: absolute;
+	left: auto;
+	width: auto;
+	height: 100%;
+	transition: .3s;
+}
+
+.graduates-skills-block-list-item p{
+	opacity: 0;
+	transition: .3s;
 }
 
 #toppedList {
