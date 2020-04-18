@@ -5,7 +5,50 @@
 
 #why-us-content {
 	width: 1100px;
+	overflow-x: visible;
 	margin: 0 auto;
+	position: relative;
+}
+
+.whyUsContentAbsolutedCircles {
+	position: absolute;
+	width: 10px;
+	height: 10px;
+	background-color: #674197;
+	border-radius: 50%;
+}
+
+.whyUsContentAbsolutedCircles {
+	position: absolute;
+	width: 10px;
+	height: 10px;
+	background-color: #674197;
+	border-radius: 50%;
+}
+
+.whyUsContentAbsolutedCircles:nth-child(1) {
+	left: 0;
+	bottom: 15%;
+}
+
+.whyUsContentAbsolutedCircles:nth-child(2) {
+	right: 0px;
+	top: -20px;
+}
+
+.whyUsContentAbsolutedCircles:nth-child(3) {
+	left: 350px;
+	top: -50px;
+}
+
+.whyUsContentAbsolutedCircles:nth-child(4) {
+	right: 250px;
+	bottom: 100px;
+}
+
+.whyUsContentAbsolutedCircles:nth-child(5) {
+	right: 600px;
+	bottom: 200px;
 }
 
 #why-us-block .blockLogo{

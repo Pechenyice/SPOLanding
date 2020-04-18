@@ -3,6 +3,40 @@
 	padding-top: 60px;
 	padding-bottom: 60px;
 	z-index: 1;
+	position: relative;
+}
+
+.skillsAbsolutedCircles {
+	position: absolute;
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
+	background-color: #7C3B98;
+}
+
+.skillsAbsolutedCircles:nth-child(1) {
+	left: 200px;
+	top: 100px;
+}
+
+.skillsAbsolutedCircles:nth-child(2) {
+	left: 150px;
+	bottom: 150px;
+}
+
+.skillsAbsolutedCircles:nth-child(3) {
+	right: 100px;
+	bottom: 50px;
+}
+
+.skillsAbsolutedCircles:nth-child(4) {
+	right: 200px;
+	bottom: 350px;
+}
+
+.skillsAbsolutedCircles:nth-child(5) {
+	right: 50px;
+	bottom: 300px;
 }
 
 #graduates-skills-block {
@@ -18,6 +52,35 @@
 #graduates-skills-block-content {
 	display: flex;
 	justify-content: space-between;
+	position: relative;
+}
+
+.skillsBlockAbsolutedCircles {
+	position: absolute;
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
+	background-color: #7C3B98;
+}
+
+.skillsBlockAbsolutedCircles:nth-child(1) {
+	left: 200px;
+	top: 100px;
+}
+
+.skillsBlockAbsolutedCircles:nth-child(2) {
+	left: 650px;
+	top: 50px;
+}
+
+.skillsBlockAbsolutedCircles:nth-child(3) {
+	left: 700px;
+	top: 80px;
+}
+
+.skillsBlockAbsolutedCircles:nth-child(4) {
+	left: 500px;
+	bottom: 20px;
 }
 
 #graduates-skills-block .blockLogo{
@@ -74,7 +137,11 @@
 	color: white;
 }
 
-.graduates-skills-block-list:first-child {
+#toppedList {
+	margin-top: -100px;
+}
+
+.graduates-skills-block-list:nth-child(1) {
 	margin-top: -70px;
 }
 

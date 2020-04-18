@@ -1,6 +1,7 @@
 #feedback-block-background {
 	background-image: url(../assets/feedback_background.png);
 	background-size: contain;
+	position: relative;
 }
 
 #feedback-block {
@@ -56,3 +57,13 @@
 #feedback-block-submit:hover {
 	cursor: pointer;
 }
+
+/* .feedbackAbsolutedCircles {
+	width: 150px;
+	height: 150px;
+	border-radius: 50%;
+	position: absolute;
+	top: -50px;
+	right: -75px;
+	background: linear-gradient(90.88deg, rgba(56, 80, 152, 0.6) 1.39%, rgba(133, 56, 152, 0.6) 175.35%);
+} */
