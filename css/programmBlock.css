@@ -439,7 +439,7 @@ div#programmBlockContent::after {
 #programmInfoFull #programmInfoFullIcon {
     width: 100%;
     text-align: center;
-    margin-top: 50px;
+    margin-top: 20px;
     color: white;
     font-size: 52px;
 }
@@ -449,15 +449,15 @@ div#programmBlockContent::after {
     text-align: center;
     margin-top: -50px;
     color: white;
-    font-size: 28px;
+    font-size: 26px;
 }
 
 #programmInfoFull #programmInfoFullSection {
     width: 100%;
     text-align: center;
-    margin-top: 0px;
+    margin-top: -20px;
     color: white;
-    font-size: 28px;
+    font-size: 22px;
 }
 
 
@@ -466,16 +466,16 @@ div#programmBlockContent::after {
     text-align: center;
     margin-top: -20px;
     color: white;
-    font-size: 28px;
+    font-size: 22px;
 }
 
 
 #programmInfoFull #programmInfoFullAbout {
     width: 100%;
     text-align: center;
-    /* margin-top: 10px; */
+    margin-top: -10px;
     color: white;
-    font-size: 28px;
+    font-size: 26px;
 }
 
 span.fakeLight {
@@ -489,6 +489,6 @@ span.fakeLight {
     margin-top: -20px;
     /* margin-top: 10px; */
     color: rgba(255, 255, 255, .8);
-    font-size: 24px;
+    font-size: 22px;
 }
 
