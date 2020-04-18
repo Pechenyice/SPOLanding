@@ -47,15 +47,46 @@
 #feedback-block-submit {
 	padding: 10px;
 	background: linear-gradient(90deg, rgba(133,56,152,1) 0%, rgba(56,80,152,1) 100%);
-	border-radius: 30px;
+	/* border-radius: 30px; */
     color: white;
-    font-size: 18px;
+    font-size: 16px;
     border: 0;
-    font-family: 'Roboto Slab', serif;
+	font-family: 'Roboto Slab', serif;
+	position: relative;
+}
+
+#feedbackBlockSubmitPlaceholder {
+	position: absolute;
+	top: calc(-50% - 2px);
+	left: 0;
+	width: 0%;
+	overflow: hidden;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #fff;
+	color: #140828;
+    font-size: 16px;
+    border: 0;
+	font-family: 'Roboto Slab', serif;
+	z-index: 5;
+	transition: .3s;
+}
+
+#feedbackBlockSubmitPlaceholder p {
+	margin: 0;
+	min-width: max-content;
 }
 
 #feedback-block-submit:hover {
 	cursor: pointer;
+}
+
+#feedback-block-submit:hover #feedbackBlockSubmitPlaceholder {
+	width: 100%;
+	z-index: 5;
+	transition: .3s;
 }
 
 /* .feedbackAbsolutedCircles {
