@@ -1,12 +1,13 @@
 #feedback-block-background {
 	background-image: url(../assets/feedback_background.png);
+	background-size: contain;
 }
 
 #feedback-block {
 	width: 800px;
 	margin: auto;
-	padding-top: 60px;
-	padding-bottom: 60px;
+	padding-top: 100px;
+	padding-bottom: 100px;
 	font-family: 'Roboto Slab', serif;
 }
 
@@ -32,7 +33,9 @@
 	width: 360px;
 	padding: 12px;
 	border: solid 4px #853898;
+	color: #853898;
 	margin-right: 20px;
+	font-family: 'Roboto Slab', serif;
 	font-size: 18px;
 }
 

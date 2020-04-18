@@ -1,31 +1,25 @@
 #graduates-reviews {
 	background-color: #C1C4D5;
 	padding-top: 100px;
-	padding-bottom: 50px;
+	padding-bottom: 100px;
 }
 
-#graduates-reviews-title {
-	width: 386px;
-	margin: auto;
-    font-family: 'Roboto Slab', serif;
-    font-size: 36px;
-    color: #385098;
-    margin-bottom: 100px;
+#graduates-reviews .blockLogo{
+    margin: 0 auto;
+    margin-bottom: 50px;
 }
 
-#graduates-reviews-title div:first-child {
-	border-bottom: solid 4px #385098;
-	text-align: center;
+#graduates-reviews:hover .blockLogo #firstUnderline{
+    margin-left: 0;
+    width: 100%;
+    transition: .3s;
 }
 
-#graduates-reviews-title div:last-child {
-	width: 204px;
-	content: ' ';
-	margin: auto;
-	padding-top: 8px;
-	border-bottom: solid 4px #385098;
+#graduates-reviews:hover .blockLogo #secondUnderline{
+    margin-left: 20%;
+    width: 60%;
+    transition: .3s;
 }
-
 #graduates-reviews-content {
 	background-color: #C1C4D5;
 	display: flex;
@@ -33,9 +27,9 @@
 }
 
 .graduate-review {
-	width: 360px;
-	height: 360px;
-	margin-right: 40px;
+	width: 350px;
+	height: 350px;
+	margin-right: 25px;
 }
 
 .graduate-review:last-child{

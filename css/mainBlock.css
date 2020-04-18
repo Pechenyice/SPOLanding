@@ -19,8 +19,10 @@ body {
     background-color: #140828;
     padding-top: 30px;
     padding-bottom: 30px;
-    /* background-image: url("../assets/main_back.png");
-    background-repeat: no-repeat; */
+    background-image: url("../assets/background.png");
+    background-repeat: no-repeat;
+    background-size: 110%;
+    background-position-x: 50%;
 }
 
 #mainBlockLogo {
