@@ -3,7 +3,7 @@
     height: 600px;
     background-color: #140828;
     position: relative;
-    z-index: 1;
+    z-index: 2;
 }
 
 #aboutUsBlockContain {
@@ -12,6 +12,104 @@
     left: 0;
     width: 100%;
     height: 600px;
+    
+}
+
+.aboutUsBlockContentAbsolutedCircles {
+    width: 10px;
+    height: 10px;
+    z-index: 0;
+    position: absolute;
+    border-radius: 50%;
+    background-color: #474A97;
+}
+
+.aboutUsBlockContentAbsolutedCircles:nth-child(1) {
+    top: 100px;
+    left: 850px;
+}
+
+.aboutUsBlockContentAbsolutedCircles:nth-child(2) {
+    top: 150px;
+    left: 150px;
+}
+
+.aboutUsBlockContentAbsolutedCircles:nth-child(3) {
+    top: 300px;
+    left: 450px;
+}
+
+.aboutUsBlockContentAbsolutedCircles:nth-child(4) {
+    background: linear-gradient(90.9deg, rgba(56, 80, 152, 0.25) 1.39%, rgba(133, 56, 152, 0.25) 175.35%);
+    width: 500px;
+    height: 500px;
+    right: 0;
+    bottom: -100px;
+    z-index: 0 !important;
+}
+
+.aboutUsBlockContainAbsolutedCircles {
+    position: absolute;
+    border-radius: 50%;
+    background: linear-gradient(90.93deg, rgba(56, 80, 152, 0.3) 1.39%, rgba(133, 56, 152, 0.3) 175.35%);
+}
+
+.aboutUsBlockContainAbsolutedCircles:nth-child(1) {
+    width: 400px;
+    height: 400px;
+    z-index: 1;
+    top: -100px;
+    left: -200px;
+}
+
+.aboutUsBlockContainAbsolutedCircles:nth-child(2) {
+    width: 10px;
+    height: 10px;
+    z-index: 1;
+    top: 0px;
+    left: 50px;
+    background-color: #474A97;
+}
+.aboutUsBlockContainAbsolutedCircles:nth-child(3) {
+    width: 10px;
+    height: 10px;
+    z-index: 1;
+    top: 300px;
+    left: 100px;
+    background-color: #474A97;
+}
+.aboutUsBlockContainAbsolutedCircles:nth-child(4) {
+    width: 10px;
+    height: 10px;
+    z-index: 1;
+    top: 500px;
+    left: 320px;
+    background-color: #474A97;
+}
+
+.aboutUsBlockContainAbsolutedCircles:nth-child(5) {
+    width: 10px;
+    height: 10px;
+    z-index: 1;
+    top: 50px;
+    right: 20px;
+    background-color: #474A97;
+}
+.aboutUsBlockContainAbsolutedCircles:nth-child(6) {
+    width: 10px;
+    height: 10px;
+    z-index: 1;
+    top: 250px;
+    right: 200px;
+    background-color: #474A97;
+}
+.aboutUsBlockContainAbsolutedCircles:nth-child(7) {
+    width: 10px;
+    height: 10px;
+    z-index: 1;
+    top: 550px;
+    right: 60px;
+    background-color: #474A97;
 }
 
 div#aboutUsBlockContain::after {
@@ -26,6 +124,7 @@ div#aboutUsBlockContain::after {
     /* transform-origin: top right; */
 }
 
+
 #aboutUsBlockContent {
     z-index: 1;
     height: 100%;
@@ -35,6 +134,7 @@ div#aboutUsBlockContain::after {
     min-width: 850px;
     /* background-color: khaki; */
     position: relative;
+    
 }
 
 #aboutUsBlockContent .blockLogo{
