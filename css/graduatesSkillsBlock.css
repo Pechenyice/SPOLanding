@@ -1,5 +1,6 @@
 #graduates-skills-block-background {
-	background-color: #c1c4d5;
+	/* background: linear-gradient(117.61deg, #C1C4D5 0%, #D9D0DC 100%);; */
+	background-color: #B486FE;;
 	padding-top: 60px;
 	padding-bottom: 60px;
 	z-index: 1;
@@ -129,9 +130,9 @@
 	height: 63.51px;
 	margin: 31.75px 0;
 	margin-bottom: 38px;
-
+	cursor: pointer;
 	text-align: center;
-	font-size: 22px;
+	font-size: 20px;
 	font-family: 'Amatic SC', cursive;
 	background-color: #140828;
 	color: white;
@@ -188,4 +189,62 @@
 	top: 100%;
 	width: 0;
 	border-top: 31.75px solid #140828;
+}
+
+.graduates-skills-block-list-item:nth-child(1) {
+	/* animation: rotaterLong 3s;
+	animation-iteration-count: infinite; */
+}
+
+.graduates-skills-block-list-item:nth-child(1) img, .graduates-skills-block-list-item:nth-child(1) p {
+	/* animation: antiRotaterLong 3s;
+	animation-iteration-count: infinite; */
+}
+
+@keyframes rotaterLong { 
+	0% {
+		transform: rotateZ(0deg);
+	} 
+	20% {
+		transform: rotateZ(60deg);
+	}
+	35% {
+		transform: rotateZ(120deg);
+	}
+	50% {
+		transform: rotateZ(180deg);
+	}
+	65% {
+		transform: rotateZ(240deg);
+	}
+	80% {
+		transform: rotateZ(300deg);
+	}
+	100% {
+		transform: rotateZ(360deg);
+	}
+}
+
+@keyframes antiRotaterLong { 
+	0% {
+		transform: rotateZ(0deg);
+	} 
+	20% {
+		transform: rotateZ(-60deg);
+	}
+	35% {
+		transform: rotateZ(-120deg);
+	}
+	50% {
+		transform: rotateZ(-180deg);
+	}
+	65% {
+		transform: rotateZ(-240deg);
+	}
+	80% {
+		transform: rotateZ(-300deg);
+	}
+	100% {
+		transform: rotateZ(-360deg);
+	}
 }

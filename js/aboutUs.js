@@ -16,24 +16,39 @@ approach.addEventListener('click', () => {
     if (handler != 1) {
         switch (handler) {
             case 2: {
-                method.style.backgroundColor = "#1B1030";
+                method.getElementsByClassName('absolutedPlaceholder')[0].style.width = '0';
+                method.getElementsByClassName('absolutedPlaceholder')[0].style.height = '0';
+                method.getElementsByClassName('absolutedPlaceholder')[0].style.left = '50%';
+                method.getElementsByClassName('absolutedPlaceholder')[0].style.top = '50%';
                 break;
             }
             case 3: {
-                it.style.backgroundColor = "#1B1030";
+                it.getElementsByClassName('absolutedPlaceholder')[0].style.width = '0';
+                it.getElementsByClassName('absolutedPlaceholder')[0].style.height = '0';
+                it.getElementsByClassName('absolutedPlaceholder')[0].style.left = '50%';
+                it.getElementsByClassName('absolutedPlaceholder')[0].style.top = '50%';
                 break;
             }
             case 4: {
-                future.style.backgroundColor = "#1B1030";
+                future.getElementsByClassName('absolutedPlaceholder')[0].style.width = '0';
+                future.getElementsByClassName('absolutedPlaceholder')[0].style.height = '0';
+                future.getElementsByClassName('absolutedPlaceholder')[0].style.left = '50%';
+                future.getElementsByClassName('absolutedPlaceholder')[0].style.top = '50%';
                 break;
             }
             case 5: {
-                format.style.backgroundColor = "#1B1030";
+                format.getElementsByClassName('absolutedPlaceholder')[0].style.width = '0';
+                format.getElementsByClassName('absolutedPlaceholder')[0].style.height = '0';
+                format.getElementsByClassName('absolutedPlaceholder')[0].style.left = '50%';
+                format.getElementsByClassName('absolutedPlaceholder')[0].style.top = '50%';
                 break;
             }
         }
         handler = 1;
-        approach.style.backgroundColor = "#853898";
+        approach.getElementsByClassName('absolutedPlaceholder')[0].style.width = '100%';
+        approach.getElementsByClassName('absolutedPlaceholder')[0].style.height = '100%';
+        approach.getElementsByClassName('absolutedPlaceholder')[0].style.left = '0';
+        approach.getElementsByClassName('absolutedPlaceholder')[0].style.top = '0';
         aboutBox.style.opacity = 0;
         aboutTimer = setTimeout(() => {
             text.innerHTML = "approach";
@@ -48,24 +63,39 @@ method.addEventListener('click', () => {
     if (handler != 2) {
         switch (handler) {
             case 1: {
-                approach.style.backgroundColor = "#1B1030";
+                approach.getElementsByClassName('absolutedPlaceholder')[0].style.width = '0';
+                approach.getElementsByClassName('absolutedPlaceholder')[0].style.height = '0';
+                approach.getElementsByClassName('absolutedPlaceholder')[0].style.left = '50%';
+                approach.getElementsByClassName('absolutedPlaceholder')[0].style.top = '50%';
                 break;
             }
             case 3: {
-                it.style.backgroundColor = "#1B1030";
+                it.getElementsByClassName('absolutedPlaceholder')[0].style.width = '0';
+                it.getElementsByClassName('absolutedPlaceholder')[0].style.height = '0';
+                it.getElementsByClassName('absolutedPlaceholder')[0].style.left = '50%';
+                it.getElementsByClassName('absolutedPlaceholder')[0].style.top = '50%';
                 break;
             }
             case 4: {
-                future.style.backgroundColor = "#1B1030";
+                future.getElementsByClassName('absolutedPlaceholder')[0].style.width = '0';
+                future.getElementsByClassName('absolutedPlaceholder')[0].style.height = '0';
+                future.getElementsByClassName('absolutedPlaceholder')[0].style.left = '50%';
+                future.getElementsByClassName('absolutedPlaceholder')[0].style.top = '50%';
                 break;
             }
             case 5: {
-                format.style.backgroundColor = "#1B1030";
+                format.getElementsByClassName('absolutedPlaceholder')[0].style.width = '0';
+                format.getElementsByClassName('absolutedPlaceholder')[0].style.height = '0';
+                format.getElementsByClassName('absolutedPlaceholder')[0].style.left = '50%';
+                format.getElementsByClassName('absolutedPlaceholder')[0].style.top = '50%';
                 break;
             }
         }
         handler = 2;
-        method.style.backgroundColor = "#853898";
+        method.getElementsByClassName('absolutedPlaceholder')[0].style.width = '100%';
+        method.getElementsByClassName('absolutedPlaceholder')[0].style.height = '100%';
+        method.getElementsByClassName('absolutedPlaceholder')[0].style.left = '0';
+        method.getElementsByClassName('absolutedPlaceholder')[0].style.top = '0';
         aboutBox.style.opacity = 0;
         aboutTimer = setTimeout(() => {
             text.innerHTML = "method";
@@ -81,24 +111,39 @@ it.addEventListener('click', () => {
     if (handler != 3) {
         switch (handler) {
             case 2: {
-                method.style.backgroundColor = "#1B1030";
+                method.getElementsByClassName('absolutedPlaceholder')[0].style.width = '0';
+                method.getElementsByClassName('absolutedPlaceholder')[0].style.height = '0';
+                method.getElementsByClassName('absolutedPlaceholder')[0].style.left = '50%';
+                method.getElementsByClassName('absolutedPlaceholder')[0].style.top = '50%';
                 break;
             }
             case 1: {
-                approach.style.backgroundColor = "#1B1030";
+                approach.getElementsByClassName('absolutedPlaceholder')[0].style.width = '0';
+                approach.getElementsByClassName('absolutedPlaceholder')[0].style.height = '0';
+                approach.getElementsByClassName('absolutedPlaceholder')[0].style.left = '50%';
+                approach.getElementsByClassName('absolutedPlaceholder')[0].style.top = '50%';
                 break;
             }
             case 4: {
-                future.style.backgroundColor = "#1B1030";
+                future.getElementsByClassName('absolutedPlaceholder')[0].style.width = '0';
+                future.getElementsByClassName('absolutedPlaceholder')[0].style.height = '0';
+                future.getElementsByClassName('absolutedPlaceholder')[0].style.left = '50%';
+                future.getElementsByClassName('absolutedPlaceholder')[0].style.top = '50%';
                 break;
             }
             case 5: {
-                format.style.backgroundColor = "#1B1030";
+                format.getElementsByClassName('absolutedPlaceholder')[0].style.width = '0';
+                format.getElementsByClassName('absolutedPlaceholder')[0].style.height = '0';
+                format.getElementsByClassName('absolutedPlaceholder')[0].style.left = '50%';
+                format.getElementsByClassName('absolutedPlaceholder')[0].style.top = '50%';
                 break;
             }
         }
         handler = 3;
-        it.style.backgroundColor = "#853898";
+        it.getElementsByClassName('absolutedPlaceholder')[0].style.width = '100%';
+        it.getElementsByClassName('absolutedPlaceholder')[0].style.height = '100%';
+        it.getElementsByClassName('absolutedPlaceholder')[0].style.left = '0';
+        it.getElementsByClassName('absolutedPlaceholder')[0].style.top = '0';
         aboutBox.style.opacity = 0;
         aboutTimer = setTimeout(() => {
             text.innerHTML = "it";
@@ -114,24 +159,39 @@ future.addEventListener('click', () => {
     if (handler != 4) {
         switch (handler) {
             case 2: {
-                method.style.backgroundColor = "#1B1030";
+                method.getElementsByClassName('absolutedPlaceholder')[0].style.width = '0';
+                method.getElementsByClassName('absolutedPlaceholder')[0].style.height = '0';
+                method.getElementsByClassName('absolutedPlaceholder')[0].style.left = '50%';
+                method.getElementsByClassName('absolutedPlaceholder')[0].style.top = '50%';
                 break;
             }
             case 3: {
-                it.style.backgroundColor = "#1B1030";
+                it.getElementsByClassName('absolutedPlaceholder')[0].style.width = '0';
+                it.getElementsByClassName('absolutedPlaceholder')[0].style.height = '0';
+                it.getElementsByClassName('absolutedPlaceholder')[0].style.left = '50%';
+                it.getElementsByClassName('absolutedPlaceholder')[0].style.top = '50%';
                 break;
             }
             case 1: {
-                approach.style.backgroundColor = "#1B1030";
+                approach.getElementsByClassName('absolutedPlaceholder')[0].style.width = '0';
+                approach.getElementsByClassName('absolutedPlaceholder')[0].style.height = '0';
+                approach.getElementsByClassName('absolutedPlaceholder')[0].style.left = '50%';
+                approach.getElementsByClassName('absolutedPlaceholder')[0].style.top = '50%';
                 break;
             }
             case 5: {
-                format.style.backgroundColor = "#1B1030";
+                format.getElementsByClassName('absolutedPlaceholder')[0].style.width = '0';
+                format.getElementsByClassName('absolutedPlaceholder')[0].style.height = '0';
+                format.getElementsByClassName('absolutedPlaceholder')[0].style.left = '50%';
+                format.getElementsByClassName('absolutedPlaceholder')[0].style.top = '50%';
                 break;
             }
         }
         handler = 4;
-        future.style.backgroundColor = "#853898";
+        future.getElementsByClassName('absolutedPlaceholder')[0].style.width = '100%';
+        future.getElementsByClassName('absolutedPlaceholder')[0].style.height = '100%';
+        future.getElementsByClassName('absolutedPlaceholder')[0].style.left = '0';
+        future.getElementsByClassName('absolutedPlaceholder')[0].style.top = '0';
         aboutBox.style.opacity = 0;
         aboutTimer = setTimeout(() => {
             text.innerHTML = "future";
@@ -147,24 +207,39 @@ format.addEventListener('click', () => {
     if (handler != 5) {
         switch (handler) {
             case 2: {
-                method.style.backgroundColor = "#1B1030";
+                method.getElementsByClassName('absolutedPlaceholder')[0].style.width = '0';
+                method.getElementsByClassName('absolutedPlaceholder')[0].style.height = '0';
+                method.getElementsByClassName('absolutedPlaceholder')[0].style.left = '50%';
+                method.getElementsByClassName('absolutedPlaceholder')[0].style.top = '50%';
                 break;
             }
             case 3: {
-                it.style.backgroundColor = "#1B1030";
+                it.getElementsByClassName('absolutedPlaceholder')[0].style.width = '0';
+                it.getElementsByClassName('absolutedPlaceholder')[0].style.height = '0';
+                it.getElementsByClassName('absolutedPlaceholder')[0].style.left = '50%';
+                it.getElementsByClassName('absolutedPlaceholder')[0].style.top = '50%';
                 break;
             }
             case 4: {
-                future.style.backgroundColor = "#1B1030";
+                future.getElementsByClassName('absolutedPlaceholder')[0].style.width = '0';
+                future.getElementsByClassName('absolutedPlaceholder')[0].style.height = '0';
+                future.getElementsByClassName('absolutedPlaceholder')[0].style.left = '50%';
+                future.getElementsByClassName('absolutedPlaceholder')[0].style.top = '50%';
                 break;
             }
             case 1: {
-                approach.style.backgroundColor = "#1B1030";
+                approach.getElementsByClassName('absolutedPlaceholder')[0].style.width = '0';
+                approach.getElementsByClassName('absolutedPlaceholder')[0].style.height = '0';
+                approach.getElementsByClassName('absolutedPlaceholder')[0].style.left = '50%';
+                approach.getElementsByClassName('absolutedPlaceholder')[0].style.top = '50%';
                 break;
             }
         }
         handler = 5;
-        format.style.backgroundColor = "#853898";
+        format.getElementsByClassName('absolutedPlaceholder')[0].style.width = '100%';
+        format.getElementsByClassName('absolutedPlaceholder')[0].style.height = '100%';
+        format.getElementsByClassName('absolutedPlaceholder')[0].style.left = '0';
+        format.getElementsByClassName('absolutedPlaceholder')[0].style.top = '0';
         aboutBox.style.opacity = 0;
         aboutTimer = setTimeout(() => {
             text.innerHTML = "format";

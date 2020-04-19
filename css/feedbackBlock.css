@@ -59,9 +59,9 @@
 	position: absolute;
 	top: calc(-50% - 2px);
 	left: 0;
-	width: 0%;
+	width: 100%;
 	overflow: hidden;
-	height: 100%;
+	height: 0;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -76,7 +76,7 @@
 
 #feedbackBlockSubmitPlaceholder p {
 	margin: 0;
-	min-width: max-content;
+	min-height: max-content;
 }
 
 #feedback-block-submit:hover {
@@ -84,7 +84,7 @@
 }
 
 #feedback-block-submit:hover #feedbackBlockSubmitPlaceholder {
-	width: 100%;
+	height: 100%;
 	z-index: 5;
 	transition: .3s;
 }

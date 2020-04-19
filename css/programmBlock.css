@@ -106,7 +106,8 @@ div#programmBlockContent::before {
     width: 100%;
     height: 100%;
     content: '';
-    background-color: #C1C4D5;
+    /* background: linear-gradient(117.61deg, #C1C4D5 0%, #D9D0DC 100%); */
+    background-color: #B486FE;
     transform: skewY(7deg);
     z-index: 0;
     /* transform-origin: top left; */
@@ -120,7 +121,7 @@ div#programmBlockContent::after {
     height: 100px;
     content: '';
     background-color: #140828;
-    transform: skewY(-2deg);
+    transform: skewY(-3deg);
     z-index: -2;
     transform-origin: top left;
 }
@@ -199,6 +200,7 @@ div#programmBlockContent::after {
 }
 
 #gridProgramms .grided {
+    /* color: #A879F6; */
     color: white;
     font-family: 'Amatic SC', cursive;
     font-size: 24px;
@@ -206,7 +208,7 @@ div#programmBlockContent::after {
     padding-top: 10px;
     padding-bottom: 10px;
     box-sizing: border-box;
-    border: 2px white solid;
+    border: 2px #A879F6 solid;
     border-radius: 25px;
     cursor: pointer;
     transition: .3s;
@@ -215,8 +217,9 @@ div#programmBlockContent::after {
 
 #gridProgramms .grided:hover {
     transition: .3s;
-    background: white;
-    color: #140828;
+    /* color: white; */
+    background: #A879F6;
+    /* color: #140828; */
 }
 
 /* 1 course */
