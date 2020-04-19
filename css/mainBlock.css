@@ -1,17 +1,16 @@
-body {
-    margin: 0;
-    padding: 0;
-    background-color: #140828;
-}
 
-#main {
-    width: 100%;
-    height: 100%;
-    margin: 0;
-    padding: 0%;
+#backgroundParallax {
+    position: absolute;
+    left: -5%;
+    bottom: -5%;
+    width: 110%;
+    height: auto;
+    z-index: 0;
 }
 
 #mainBlock {
+    overflow: hidden;
+    position: relative;
     box-sizing: border-box;
     height: max-content;
     min-height: 100vh;
@@ -19,10 +18,10 @@ body {
     background-color: #140828;
     padding-top: 30px;
     padding-bottom: 30px;
-    background-image: url("../assets/background.png");
+    /* background-image: url("../assets/background.png");
     background-repeat: no-repeat;
     background-size: 110%;
-    background-position-x: 50%;
+    background-position-x: 50%; */
 }
 
 #mainBlockLogo {
@@ -32,6 +31,7 @@ body {
     background-size: contain;
     background-repeat: no-repeat;
     margin-left: calc(50% - 50px);
+    z-index: 1;
 }
 
 .navigation {
@@ -41,6 +41,7 @@ body {
     height: 80px;
     width: 800px;
     margin-left: calc(50% - 400px);
+    z-index: 1;
 }
 
 .navigationText {
@@ -184,6 +185,8 @@ body {
 }
 
 #mainBlockMax {
+    position: relative;
+    z-index: 1;
     margin: 0;
     width: 800px;
     height: max-content;
@@ -197,6 +200,8 @@ body {
 }
 
 #mainBlockMiddle {
+    position: relative;
+    z-index: 1;
     margin: 0;
     width: 800px;
     height: max-content;
@@ -209,6 +214,8 @@ body {
 }
 
 #mainBlockMin {
+    position: relative;
+    z-index: 1;
     margin: 0;
     width: 800px;
     height: max-content;
@@ -221,6 +228,8 @@ body {
 }
 
 #mainBlockText {
+    position: relative;
+    z-index: 1;
     margin: 0;
     width: 800px;
     height: max-content;
@@ -232,9 +241,12 @@ body {
     letter-spacing: 1px;
     font-size: 22px;
     text-align: center;
+    transition: .3s;
 }
 
 #mainBlockButton {
+    position: relative;
+    z-index: 1;
     width: 250px;
     height: 50px;
     margin-top: 100px;
