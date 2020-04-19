@@ -41,6 +41,7 @@
 
 .aboutUsBlockContentAbsolutedCircles:nth-child(4) {
     background: linear-gradient(90.9deg, rgba(56, 80, 152, 0.25) 1.39%, rgba(133, 56, 152, 0.25) 175.35%);
+    /* linear-gradient(90deg, rgba(133, 56, 152, 0.15) 4.36%, rgba(56, 80, 152, 0.15) 95.42%); */
     width: 500px;
     height: 500px;
     right: 0;
@@ -229,6 +230,7 @@ div#aboutUsBlockContain::after {
 .centeredAboutIcon {
     color: #7C75A6;
     font-size: 64px;
+    z-index: 1;
 }
 
 #centeredAboutMainIcon {
@@ -243,4 +245,21 @@ div#aboutUsBlockContain::after {
     font-family: 'Amatic SC', cursive;
     font-size: 27px;
     margin: 0;
+    z-index: 1;
+}
+
+#aboutAtom {
+    font-size: 85px;
+}
+
+.absolutedPlaceholder {
+    transition: .3s;
+    background-color: #322163;
+    width: 0;
+    height: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border-radius: 50%;
+    z-index: 0;
 }

@@ -30,6 +30,10 @@
     transition: .3s;
 }
 
+.bodyAbsolutedCircles {
+    transition: .3s;
+}
+
 /* .blockLogo:hover #firstUnderline {
     margin-left: 0;
     width: 100%;

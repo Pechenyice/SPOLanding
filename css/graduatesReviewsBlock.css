@@ -1,5 +1,6 @@
 #graduates-reviews {
-	background-color: #C1C4D5;
+	/* background: linear-gradient(117.61deg, #C1C4D5 0%, #D9D0DC 100%); */
+	background-color: #B486FE;
 	padding-top: 100px;
 	padding-bottom: 100px;
 }
@@ -21,7 +22,7 @@
     transition: .3s;
 }
 #graduates-reviews-content {
-	background-color: #C1C4D5;
+	/* background-color: #C1C4D5; */
 	display: flex;
 	justify-content: center;
 }

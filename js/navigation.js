@@ -181,11 +181,11 @@ window.onload = () => {
         }
     });
 
-    navigationElems[0].click();
-    navigationElems[1].click();
-    navigationElems[3].click();
-    navigationElems[3].dispatchEvent(mouseoverer);
-    navigationElems[3].dispatchEvent(mouseleaver);
+    // navigationElems[0].click();
+    // navigationElems[1].click();
+    // navigationElems[3].click();
+    // navigationElems[3].dispatchEvent(mouseoverer);
+    // navigationElems[3].dispatchEvent(mouseleaver);
 
     var mainButton = document.getElementById('mainBlockButton');
 
