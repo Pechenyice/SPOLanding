@@ -194,13 +194,28 @@ window.onload = () => {
         if (pageYOffset > mainBlockHeight + whyUsBlockHeight + aboutUsBlockHeight + graduateBlockHeight + programmBlockHeight + reviewBlockHeight + 200) scrollerTop(mainBlockHeight + whyUsBlockHeight + aboutUsBlockHeight + graduateBlockHeight + programmBlockHeight + reviewBlockHeight + 200); else scrollerBottom(mainBlockHeight + whyUsBlockHeight + aboutUsBlockHeight + graduateBlockHeight + programmBlockHeight + reviewBlockHeight + 200);
     });
     
+    var footerLinks = document.getElementById('footer-block-links').getElementsByTagName('ul')[0].getElementsByTagName('li');
+
+    footerLinks[3].addEventListener('click', () => {
+        scrollerTop(mainBlockHeight + whyUsBlockHeight + aboutUsBlockHeight + graduateBlockHeight + programmBlockHeight + 200);
+    });
+    footerLinks[2].addEventListener('click', () => {
+        scrollerTop(mainBlockHeight + whyUsBlockHeight + aboutUsBlockHeight + graduateBlockHeight + 200);
+    });
+    footerLinks[1].addEventListener('click', () => {
+        scrollerTop(mainBlockHeight + whyUsBlockHeight + aboutUsBlockHeight + 200);
+    });
+    footerLinks[0].addEventListener('click', () => {
+        scrollerTop(mainBlockHeight);
+    });
+
     var navigationTiming;
 
     function scrollerTop(y) {
         scrollSpeed -= 0.001;
         if (pageYOffset <= 0) return;
-        if (pageYOffset > y) {
-            window.scrollTo(0, pageYOffset - 30);
+        if (pageYOffset >= y) {
+            window.scrollTo(0, pageYOffset - 40);
             navigationTiming = setTimeout(() => {scrollerTop(y)}, scrollSpeed);
         } else {
             clearTimeout(navigationTiming);
@@ -212,7 +227,7 @@ window.onload = () => {
         scrollSpeed -= 0.001;
         if (pageYOffset + screen.height >= document.body.clientHeight) return;
         if (pageYOffset < y) {
-            window.scrollTo(0, pageYOffset + 30);
+            window.scrollTo(0, pageYOffset + 40);
             navigationTiming = setTimeout(() => {scrollerBottom(y)}, scrollSpeed);
         } else {
             clearTimeout(navigationTiming);

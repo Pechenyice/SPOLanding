@@ -107,7 +107,7 @@ div#programmBlockContent::before {
     height: 100%;
     content: '';
     /* background: linear-gradient(117.61deg, #C1C4D5 0%, #D9D0DC 100%); */
-    background-color: #B486FE;
+    background-color: #0B031A;
     transform: skewY(7deg);
     z-index: 0;
     /* transform-origin: top left; */
@@ -495,3 +495,16 @@ span.fakeLight {
     font-size: 22px;
 }
 
+#coursesContent li {
+    position: relative !important;
+}
+
+.activeCourse {
+    position: absolute;
+    bottom: -20px;
+    left: 50%;
+    height: 3px;
+    width: 0;
+    background-color: #fff;
+    transition: .3s;
+}

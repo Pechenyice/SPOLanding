@@ -30,7 +30,7 @@
 }
 
 .aboutUsBlockContentAbsolutedCircles:nth-child(2) {
-    top: 150px;
+    top: 50px;
     left: 150px;
 }
 
@@ -191,7 +191,7 @@ div#aboutUsBlockContain::after {
     width: 150px;
     height: 150px;
     top: 500px;
-    right: 450px;
+    right: 400px;
 }
 
 #aboutFormat {
@@ -206,23 +206,26 @@ div#aboutUsBlockContain::after {
     width: 350px;
     height: max-content;
     position: absolute;
-    top: 200px;
+    top: 100px;
     left: 20px;
     transition: .3s;
 }
 
 #aboutText h1{
+    /* padding-right: 25px; */
     color: #853898;
-    font-family: 'Roboto Slab', serif;
-    font-size: 30px;
+    font-family: 'Amatic SC', cursive;
+    /* text-decoration: underline; */
+    font-size: 48px;
     margin-top: 0;
+    margin: 0;
     padding-top: 0;
 }
 
 #aboutText p{
     color: white;
-    font-family: 'Amatic SC', cursive;
-    font-size: 24px;
+    font-family: 'Roboto Slab', serif;
+    font-size: 16px;
     margin: 0;
     padding: 0;
 }
@@ -253,7 +256,7 @@ div#aboutUsBlockContain::after {
 }
 
 .absolutedPlaceholder {
-    transition: .3s;
+    transition: .5s;
     background-color: #322163;
     width: 0;
     height: 0;
@@ -262,4 +265,8 @@ div#aboutUsBlockContain::after {
     left: 50%;
     border-radius: 50%;
     z-index: 0;
+}
+
+span.veryImportantWord {
+    color: violet;
 }

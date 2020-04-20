@@ -453,8 +453,38 @@ const lessons = [
         
     }
 
+    var activeCourse = 1;
+
     function spawner(iteration) {
         grid.innerHTML = '';
+
+        switch (activeCourse) {
+            case 1: {
+                document.getElementById('coursesContent').getElementsByTagName('li')[0].getElementsByTagName('div')[0].style.left = '50%';
+                document.getElementById('coursesContent').getElementsByTagName('li')[0].getElementsByTagName('div')[0].style.width = '0%';
+                break;
+            }
+            case 2: {
+                document.getElementById('coursesContent').getElementsByTagName('li')[1].getElementsByTagName('div')[0].style.left = '50%';
+                document.getElementById('coursesContent').getElementsByTagName('li')[1].getElementsByTagName('div')[0].style.width = '0%';
+                break;
+            }
+            case 3: {
+                document.getElementById('coursesContent').getElementsByTagName('li')[2].getElementsByTagName('div')[0].style.left = '50%';
+                document.getElementById('coursesContent').getElementsByTagName('li')[2].getElementsByTagName('div')[0].style.width = '0%';
+                break;
+            }
+            case 4: {
+                document.getElementById('coursesContent').getElementsByTagName('li')[3].getElementsByTagName('div')[0].style.left = '50%';
+                document.getElementById('coursesContent').getElementsByTagName('li')[3].getElementsByTagName('div')[0].style.width = '0%';
+                break;
+            }
+        }
+
+        document.getElementById('coursesContent').getElementsByTagName('li')[iteration].getElementsByTagName('div')[0].style.left = '10%';
+        document.getElementById('coursesContent').getElementsByTagName('li')[iteration].getElementsByTagName('div')[0].style.width = '80%';
+        activeCourse = iteration + 1;
+
         var i = 0;
                 for (var lesson of lessons[iteration]) {
                     // console.log(lesson);

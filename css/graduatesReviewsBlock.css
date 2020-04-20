@@ -1,6 +1,6 @@
 #graduates-reviews {
 	/* background: linear-gradient(117.61deg, #C1C4D5 0%, #D9D0DC 100%); */
-	background-color: #B486FE;
+	background-color: #0B031A;
 	padding-top: 100px;
 	padding-bottom: 100px;
 }
@@ -74,7 +74,7 @@
 }
 
 .graduate-review-circle-first {
-	background-color: #341C5C;
+	background-color: #1D0F35;
 
 	width: 90%;
 	height: 90%;
@@ -88,7 +88,7 @@
 }
 
 .graduate-review-circle-third {
-	background-color: #1D0F35;
+	background-color: #341C5C;
 
 	width: 90%;
 	height: 90%;
@@ -132,16 +132,17 @@
 	border-radius: 50%;
 }
 
-.graduate-review-footer-info {
+/* .graduate-review-footer-info {
 }
 
 .graduate-review-footer-info-name {
 
-}
+} */
 
 .graduate-review-footer-info-work {
 	font-size: 14px;
 	color: #9598A0;
+	text-align: left;
 }
 
 #graduatesReviewsContentPositioned {
