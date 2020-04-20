@@ -194,15 +194,16 @@ window.onload = () => {
         if (pageYOffset > mainBlockHeight + whyUsBlockHeight + aboutUsBlockHeight + graduateBlockHeight + programmBlockHeight + reviewBlockHeight + 200) scrollerTop(mainBlockHeight + whyUsBlockHeight + aboutUsBlockHeight + graduateBlockHeight + programmBlockHeight + reviewBlockHeight + 200); else scrollerBottom(mainBlockHeight + whyUsBlockHeight + aboutUsBlockHeight + graduateBlockHeight + programmBlockHeight + reviewBlockHeight + 200);
     });
     
-    
+    var navigationTiming;
+
     function scrollerTop(y) {
         scrollSpeed -= 0.001;
         if (pageYOffset <= 0) return;
         if (pageYOffset > y) {
-            window.scrollTo(0, pageYOffset - 20);
-            timer = setTimeout(() => {scrollerTop(y)}, scrollSpeed);
+            window.scrollTo(0, pageYOffset - 30);
+            navigationTiming = setTimeout(() => {scrollerTop(y)}, scrollSpeed);
         } else {
-            clearTimeout(timer);
+            clearTimeout(navigationTiming);
             scrollSpeed = 5;
         }
     }
@@ -211,10 +212,10 @@ window.onload = () => {
         scrollSpeed -= 0.001;
         if (pageYOffset + screen.height >= document.body.clientHeight) return;
         if (pageYOffset < y) {
-            window.scrollTo(0, pageYOffset + 20);
-            timer = setTimeout(() => {scrollerBottom(y)}, scrollSpeed);
+            window.scrollTo(0, pageYOffset + 30);
+            navigationTiming = setTimeout(() => {scrollerBottom(y)}, scrollSpeed);
         } else {
-            clearTimeout(timer);
+            clearTimeout(navigationTiming);
             scrollSpeed = 5;
         }
     }
