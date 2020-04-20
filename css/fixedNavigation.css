@@ -1,0 +1,39 @@
+/* #fixedNavigation {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #140828;
+    height: 0;
+    z-index: 10;
+    transition: .3s;
+    overflow: hidden;
+}
+
+#fixedNavigation .navigation {
+    margin-top: 10px;
+} */
+
+#toTop {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    border-radius: 50%;
+    border: 3px solid #A879F6;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #A879F6;
+    font-size: 30px;
+    z-index: 50;
+    transition: .3s;
+    cursor: pointer;
+}
+
+#toTop:hover {
+    transition: .3s;
+    background-color: #A879F6;
+    color: #140828;
+}
