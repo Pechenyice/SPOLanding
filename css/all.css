@@ -57,3 +57,45 @@ body {
     width: 60%;
     transition: .3s;
 } */
+
+#screenQuery {
+    display: none;
+}
+
+/* 
+    Он не отобрадается при нормальном разрешении
+*/
+
+@media screen and (max-width: 1100px) {
+    /* 
+        Это запрос на ширину экрана 1100px, если ширина меньше, отсюда
+        будут браться стили (работает как if) 
+        привожу пример ЕГО ПОТОМ УДАЛИТЬ
+        Этот блок лежит в сама начале BODY
+        НЕЛЬЗЯ ЕГО ЗАБЫТЬ
+    */
+
+    div#screenQuery {
+        position: fixed;
+        background-color: tomato;
+        color: white;
+        font-family: 'Amatic SC', cursive;
+        font-size: 60px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        top: 10vh;
+        left: calc(50% - 40vh);
+        height: 80vh;
+        width: 80vh;
+        border-radius: 50%;
+        z-index: 100;
+        transition: .3s;
+        cursor: pointer;
+    }
+
+    div#screenQuery:hover {
+        transition: .3s;
+        box-shadow: 0 0 50px tomato;
+    }
+}
