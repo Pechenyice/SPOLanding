@@ -176,3 +176,42 @@
 	bottom: -20px;
 	right: 550px;
 }
+
+@media screen and (max-width: 1100px) {
+
+	
+	#graduates-reviews {
+		padding-bottom: 25px;
+	}
+
+	#graduatesReviewsContentPositioned {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.graduate-review {
+		margin-right: 0;
+		width: 300px;
+		height: 300px;
+		padding-bottom: 20px;
+	}
+
+	#graduates-reviews .blockLogo{
+	    margin-bottom: 25px;
+	}
+
+	.graduate-review-header {
+		font-size: 70px;
+	}
+
+	.graduate-review-body {
+		font-size: 16px;
+		height: 110px;
+	}
+
+	.graduate-review-footer {
+		font-size: 16px;
+		width: 140px;
+	}
+
+}

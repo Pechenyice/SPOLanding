@@ -260,3 +260,10 @@
 		transform: rotateZ(-360deg);
 	}
 }
+
+@media screen and (max-width: 1100px) {
+	#graduates-skills-block {
+		width: 375px;
+		height: auto;
+	}
+}
