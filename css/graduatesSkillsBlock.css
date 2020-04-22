@@ -1,6 +1,6 @@
 #graduates-skills-block-background {
 	/* background: linear-gradient(117.61deg, #C1C4D5 0%, #D9D0DC 100%);; */
-	background-color: #B486FE;;
+	background-color: #0B031A;
 	padding-top: 60px;
 	padding-bottom: 60px;
 	z-index: 1;
@@ -105,10 +105,11 @@
 
 
 #graduates-skills-block-info {
-	background-color: #140828;
+	background-color: #1B1030;
 	width: 450px;
 	height: 450px;
 	border-radius: 50%;
+	border: 15px solid #140828;
 	text-align: center;
 }
 
@@ -139,7 +140,18 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	transition: .3s;
 }
+
+/* .graduates-skills-block-list-item:hover {
+	transition: .3s;
+	box-shadow: 0 0 10px #140828;
+}
+
+.graduates-skills-block-list-item:hover::after, .graduates-skills-block-list-item:hover::before {
+	transition: .3s;
+	box-shadow: 0 0 10px #140828;
+} */
 
 .graduates-skills-block-list-item img{
 	position: absolute;

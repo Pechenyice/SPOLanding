@@ -30,6 +30,7 @@
     z-index: 50;
     transition: .3s;
     cursor: pointer;
+    font-weight: 100;
 }
 
 #toTop:hover {

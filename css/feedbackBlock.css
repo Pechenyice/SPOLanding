@@ -46,13 +46,22 @@
 
 #feedback-block-submit {
 	padding: 10px;
-	background: linear-gradient(90deg, rgba(133,56,152,1) 0%, rgba(56,80,152,1) 100%);
+	/* background: linear-gradient(90deg, rgba(133,56,152,1) 0%, rgba(56,80,152,1) 100%); */
+	border: 3px solid #853898;
+	background-color: #140828;
 	/* border-radius: 30px; */
     color: white;
     font-size: 16px;
-    border: 0;
+    /* border: 0; */
 	font-family: 'Roboto Slab', serif;
 	position: relative;
+	transition: .3s;
+}
+
+#feedback-block-submit:hover {
+	background-color: #853898;
+	color: #fff;
+	transition: .3s;
 }
 
 #feedbackBlockSubmitPlaceholder {
@@ -65,8 +74,8 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	background-color: #fff;
-	color: #140828;
+	background-color: #A879F6;
+	color: white;
     font-size: 16px;
     border: 0;
 	font-family: 'Roboto Slab', serif;
@@ -86,6 +95,7 @@
 #feedback-block-submit:hover #feedbackBlockSubmitPlaceholder {
 	height: 100%;
 	z-index: 5;
+	border: 3px solid #A879F6;
 	transition: .3s;
 }
 
