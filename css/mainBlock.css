@@ -297,3 +297,95 @@
         transform: rotateZ(360deg);
     }
 }
+
+@media screen and (max-width: 1100px) {
+    /* 
+        Это запрос на ширину экрана 1100px, если ширина меньше, отсюда
+        будут браться стили (работает как if) 
+        привожу пример ЕГО ПОТОМ УДАЛИТЬ
+        Этот блок лежит в сама начале BODY
+        НЕЛЬЗЯ ЕГО ЗАБЫТЬ
+    */
+
+    #mainBlockText {
+        margin: auto;
+        width: 340px;
+        height: max-content;
+        margin-top: 50px;
+        font-size: 22px;
+        text-align: center;
+    }
+
+    #mainBlockMax {
+        width: 375px;
+        margin-top: 320px;
+        font-size: 34px;
+        margin-left: 0;
+    }
+
+    #mainBlockMiddle {
+        width: 375px;
+        font-size: 28px;
+        margin-left: 0;
+    }
+
+    #mainBlockMin {
+        width: 375px;
+        font-size: 22px;
+        margin-left: 0;
+    }
+
+    #mainBlockLogo {
+        position: absolute;
+        margin-top: 100px;
+        margin-left: calc(375px / 2 - 100px);
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        background-image: none;
+        border: solid 3px #7C75A6;
+    }
+
+    #mainBlockLogoMobile {
+        width: 80%;
+        margin: auto;
+        height: 100%;
+        background-image: url(../img/itmo_logo.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        z-index: 1;
+        margin-top: calc(50% - 35px);
+    }
+
+    .navigation {
+        position: relative;
+        margin-top: 25px;
+        width: 375px;
+        height: auto;
+        margin: auto;
+        z-index: 1;
+        border-bottom: solid 3px #565160;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .navigationText {
+        width: 90px;
+        height: max-content;
+        font-family: 'Amatic SC', cursive;
+        color: white;
+        box-sizing: border-box;
+        font-size: 24px;
+        border-bottom: solid 3px #7C75A6;
+        margin-bottom: -3px;
+        padding-bottom: 12px;
+    }
+
+    .navigationIconBlock {
+        display: none;
+    }
+
+    .navigationConnection {
+        display: none;
+    }
+}

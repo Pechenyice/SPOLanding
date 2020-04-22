@@ -75,7 +75,7 @@ body {
         НЕЛЬЗЯ ЕГО ЗАБЫТЬ
     */
 
-    div#screenQuery {
+/*    div#screenQuery {
         position: fixed;
         background-color: tomato;
         color: white;
@@ -97,5 +97,5 @@ body {
     div#screenQuery:hover {
         transition: .3s;
         box-shadow: 0 0 50px tomato;
-    }
+    }*/
 }
