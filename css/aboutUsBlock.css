@@ -271,58 +271,88 @@ span.veryImportantWord {
     color: violet;
 }
 
+#about-us-mobile-block {
+    display: none;
+}
+
 @media screen and (max-width: 1100px) {
-    #aboutUsBlock {
-        width: 375px;
-        /*height: 600px;*/
-    }
 
-    #aboutUsBlockContent {
-        width: 70%;
-        max-width: 375px;
-        min-width: 375px;
-        position: relative;
-        
-    }
-
-    .blockLogo {
-        width: 100%;
+    #about-us-mobile-block .blockLogo {
         text-align: center;
+        width: 100%;
     }
 
-    #aboutApproach {
-        width: 100%;
-        height: auto;
-        top: unset;
-        right: unset;
+    #about-us-mobile-block {
+        display: block;
+        width: 360px;
+        margin: auto;
     }
 
-    #aboutMethod {
-        width: 100%;
-        height: auto;
-        top: unset;
-        right: unset;
+    #aboutUsBlock {
+        display: none;
     }
 
-    #aboutIT {
-        width: 100%;
-        height: auto;
-        top: unset;
-        right: unset;
+    .about-us-mobile-block-item {
+        display: grid;
+        grid-template-columns: 100px 260px;
+        font-family: 'Amatic SC', cursive;
+        margin-bottom: 40px;
     }
 
-    #aboutFuture {
-        width: 100%;
-        height: auto;
-        top: unset;
-        right: unset;
+    .about-us-mobile-block-item-icon div {
+        width: 80px;
+        height: 80px;
+        background-color: #1B1030;
+        border-radius: 50%;
     }
 
-    #aboutFormat {
-        width: 100%;
-        height: auto;
-        top: unset;
-        right: unset;
+    .about-us-mobile-block-item-icon div i {
+        color: #7C75A6;
+        position: relative;
+    }
+
+    #about-us-first-icon {
+        font-size: 40px;
+        left: 15px;
+        top: 18px;
+    }
+
+    #about-us-second-icon {
+        font-size: 40px;
+        left: 20px;
+        top: 20px;
+    }
+
+    #about-us-third-icon {
+        font-size: 40px;
+        left: 16px;
+        top: 20px;
+    }
+
+    #about-us-fourth-icon {
+        font-size: 40px;
+        left: 20px;
+        top: 20px;
+    }
+
+
+    #about-us-fifth-icon {
+        font-size: 38px;
+        left: 16px;
+        top: 20px;
+    }
+
+
+    .about-us-mobile-block-item-body-title {
+        color: #385098;
+        font-size: 26px;
+        margin-bottom: 12px;
+        margin-top: -5px;
+        }
+
+    .about-us-mobile-block-item-body-text {
+        font-size: 20px;
+        color: white;
     }
 
 }
