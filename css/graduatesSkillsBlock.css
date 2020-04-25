@@ -213,6 +213,10 @@
 	animation-iteration-count: infinite; */
 }
 
+#graduates-skills-block-mobile {
+	display: none;
+}
+
 @keyframes rotaterLong { 
 	0% {
 		transform: rotateZ(0deg);
@@ -262,8 +266,66 @@
 }
 
 @media screen and (max-width: 1100px) {
-	#graduates-skills-block {
-		width: 375px;
-		height: auto;
+
+
+	#graduates-skills-block-mobile {
+		display: block;
+		background-color: #0B031A;
+		overflow: auto;
+		padding-bottom: 20px;
 	}
+
+	#graduates-skills-block-background {
+		display: none;
+	}
+
+	#graduates-skills-block-mobile .blockLogo {
+		width: 300px;
+		margin: auto;
+		text-align: center;
+		margin-top: 16px;
+		margin-bottom: 16px;
+	}
+
+	#graduates-skills-block-mobile .blockLogo h1 {
+	}
+
+	.graduates-skills-block-list {
+		display: flex;
+		width: 300px;
+		margin: auto;
+	}
+
+	.graduates-skills-block-list:last-child {
+		display: flex;
+		padding-left: 62px;
+		margin-top: 25.5px;
+	}
+
+	.graduates-skills-block-list-item {
+		margin: 0;
+		margin-right: 10px;
+		width: 60px; 
+		height: 34.64px;
+		font-size: 11px;
+	}
+
+	.graduates-skills-block-list-item:before,
+	.graduates-skills-block-list-item:after {
+		content: "";
+		position: absolute;
+		width: 0;
+		border-left: 30px solid transparent;
+		border-right: 30px solid transparent;
+		left: 0;
+	}
+
+	.graduates-skills-block-list-item:before {
+		border-bottom: 17.32px solid #140828;
+	}
+
+	.graduates-skills-block-list-item:after {
+		border-top: 17.32px solid #140828;
+	}
+
 }

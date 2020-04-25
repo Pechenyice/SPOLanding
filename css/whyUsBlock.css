@@ -165,8 +165,8 @@
 		margin: auto;
 	}
 
-	.why-us-list-item-desc {
-		text-align: none;
+	.why-us-list-item-desc br {
+		display: none;
 	}
 
 }
