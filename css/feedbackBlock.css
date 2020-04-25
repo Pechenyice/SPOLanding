@@ -134,12 +134,12 @@
 
 }
 
-/* .feedbackAbsolutedCircles {
-	width: 150px;
-	height: 150px;
+.feedbackAbsolutedCircles {
+	width: 300px;
+	height: 300px;
 	border-radius: 50%;
 	position: absolute;
 	top: -50px;
-	right: -75px;
+	right: -150px;
 	background: linear-gradient(90.88deg, rgba(56, 80, 152, 0.6) 1.39%, rgba(133, 56, 152, 0.6) 175.35%);
-} */
+}

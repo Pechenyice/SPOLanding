@@ -40,6 +40,14 @@
 	bottom: 300px;
 }
 
+.skillsAbsolutedCircles:nth-child(6) {
+	width: 350px;
+	height: 350px;
+	bottom: -100px;
+	right: -200px;
+	background: linear-gradient(90.93deg, rgba(56, 80, 152, 0.2) 1.39%, rgba(133, 56, 152, 0.2) 175.35%);
+}
+
 #graduates-skills-block {
 	z-index: 1;
 	width: 900px;
@@ -82,6 +90,22 @@
 .skillsBlockAbsolutedCircles:nth-child(4) {
 	left: 500px;
 	bottom: 20px;
+}
+
+.skillsBlockAbsolutedCircles:nth-child(5) {
+	width: 150px;
+	height: 150px;
+	left: 180px;
+	top: -150px;
+	background: linear-gradient(90deg, rgba(133, 56, 152, 0.15) 4.36%, rgba(56, 80, 152, 0.15) 95.42%);
+}
+
+.skillsBlockAbsolutedCircles:nth-child(6) {
+	width: 75px;
+	height: 75px;
+	left: 300px;
+	top: -50px;
+	background: linear-gradient(90deg, rgba(133, 56, 152, 0.15) 4.36%, rgba(56, 80, 152, 0.15) 95.42%);
 }
 
 #graduates-skills-block-background .blockLogo{

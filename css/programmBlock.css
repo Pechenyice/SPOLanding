@@ -508,3 +508,9 @@ span.fakeLight {
     background-color: #fff;
     transition: .3s;
 }
+
+@media screen and (max-width: 1100px) {
+    div#programmBlockContent::before {
+        display: none;
+    }
+}
