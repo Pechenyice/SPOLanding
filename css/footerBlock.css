@@ -30,7 +30,7 @@
 #footer-block-links  ul li a { 
 	text-decoration: none;
 	color: #140828;
-	font-family: 'Roboto Slab', serif;
+	font-family: 'IBM Plex Sans', sans-serif;
 	font-size: 16px;
 	transition: .3s;
 	/* border-bottom: solid 2px #140828; */
@@ -43,7 +43,7 @@
 }
 
 #footer-block-location {
-	font-family: 'Roboto Slab', serif;
+	font-family: 'IBM Plex Sans', sans-serif;
 	font-size: 14px;
 	padding-bottom: 30px;
 }

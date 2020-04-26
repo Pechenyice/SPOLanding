@@ -206,7 +206,7 @@
     margin-top: 100px;
     /* background-color: yellowgreen; */
     color: white;
-    font-family: 'Roboto Slab', serif;
+    font-family: 'IBM Plex Sans', sans-serif;
     font-size: 64px;
     text-align: center;
 }
@@ -220,7 +220,7 @@
     margin-left: calc(50% - 400px);
     /* background-color: yellowgreen; */
     color: white;
-    font-family: 'Roboto Slab', serif;
+    font-family: 'IBM Plex Sans', sans-serif;
     font-size: 52px;
     text-align: center;
 }
@@ -234,7 +234,7 @@
     margin-left: calc(50% - 400px);
     /* background-color: yellowgreen; */
     color: white;
-    font-family: 'Roboto Slab', serif;
+    font-family: 'IBM Plex Sans', sans-serif;
     font-size: 42px;
     text-align: center;
 }
@@ -264,7 +264,7 @@
     margin-top: 100px;
     margin-left: calc(50% - 125px);
     color: white;
-    font-family: 'Roboto Slab', serif;
+    font-family: 'IBM Plex Sans', sans-serif;
     font-size: 16px;
     display: flex;
     justify-content: center;

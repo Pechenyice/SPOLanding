@@ -109,9 +109,9 @@
 	margin-top: 5%;
 	width: 80%;
 	height: 60%;
-	font-size: 20px;
+	font-size: 15px;
 	color: white;
-	font-family: 'Amatic SC', cursive;
+	font-family: 'IBM Plex Sans', sans-serif;
 }
 
 .graduate-review-footer {
@@ -301,7 +301,7 @@
 	}
 
 	.graduate-review-body {
-		font-size: 16px;
+		font-size: 13px;
 		height: 110px;
 	}
 

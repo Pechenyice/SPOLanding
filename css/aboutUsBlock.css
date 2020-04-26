@@ -221,7 +221,7 @@ div#aboutUsBlockContain::after {
 }
 
 #aboutText p#aboutTextPlace {
-    font-family: 'Roboto Slab', serif;
+    font-family: 'IBM Plex Sans', sans-serif;
     font-size: 18px;
     line-height: 26px;
 }
@@ -239,7 +239,7 @@ div#aboutUsBlockContain::after {
 
 #aboutText p{
     color: white;
-    font-family: 'Roboto Slab', serif;
+    font-family: 'IBM Plex Sans', sans-serif;
     font-size: 16px;
     margin: 0;
     padding: 0;
