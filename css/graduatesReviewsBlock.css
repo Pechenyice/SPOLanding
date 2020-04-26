@@ -119,8 +119,8 @@
 	width: 55%;
 	margin: auto;
 	padding: 0;
-	font-family: 'Amatic SC', cursive;
-	font-size: 16px;
+	font-family: 'IBM Plex Sans', sans-serif;
+	font-size: 14px;
 	color: white;
 }
 
@@ -140,7 +140,7 @@
 } */
 
 .graduate-review-footer-info-work {
-	font-size: 14px;
+	font-size: 12px;
 	color: #9598A0;
 	text-align: left;
 }
@@ -306,7 +306,7 @@
 	}
 
 	.graduate-review-footer {
-		font-size: 16px;
+		font-size: 13px;
 		width: 140px;
 	}
 

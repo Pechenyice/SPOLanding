@@ -1,7 +1,7 @@
 #footer-block-background {
-	background-color: #C1C4D5;
-	background-image: url(../assets/footer_background.png);
-	background-size: contain;
+	background-color: #0B031A;
+	/* background-image: url(../assets/footer_background.png); */
+	/* background-size: contain; */
 }
 
 #footerBlockContent {
@@ -29,7 +29,7 @@
 
 #footer-block-links  ul li a { 
 	text-decoration: none;
-	color: #140828;
+	color: white;
 	font-family: 'IBM Plex Sans', sans-serif;
 	font-size: 16px;
 	transition: .3s;
@@ -52,13 +52,14 @@
 	margin-bottom: 0;
 	font-size: 12px;
 	margin-top: 5px;
+	color: white;
 }
 
 #footerBlockLogo {
 	cursor: pointer;
     width: 100px;
     height: 50px;
-    background-image: url(../img/itmo_dark_logo.png);
+    background-image: url(../img/itmo_logo.png);
     background-size: contain;
     background-repeat: no-repeat;
 	margin-left: calc(50% - 50px);

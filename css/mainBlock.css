@@ -1,12 +1,12 @@
 
-#backgroundParallax {
+/* #backgroundParallax {
     position: absolute;
     left: -5%;
     bottom: -5%;
     width: 110%;
     height: auto;
     z-index: 0;
-}
+} */
 
 #backgroundDarker {
     position: absolute;
@@ -27,13 +27,15 @@
     height: max-content;
     min-height: 100vh;
     width: 100%;
-    background-color: #140828;
+    background-color: #0c031e !important;
     padding-top: 30px;
     padding-bottom: 30px;
-    /* background-image: url("../assets/background.png");
+    background: url("../assets/background.png"), url("../assets/superBackground.png") 100%;
     background-repeat: no-repeat;
     background-size: 110%;
-    background-position-x: 50%; */
+    background-position-x: 50%;
+    background-attachment: fixed;
+    background-position-y: bottom;
 }
 
 #mainBlockLogo {
@@ -206,7 +208,7 @@
     margin-top: 100px;
     /* background-color: yellowgreen; */
     color: white;
-    font-family: 'IBM Plex Sans', sans-serif;
+    font-family: 'Roboto Slab', serif;
     font-size: 64px;
     text-align: center;
 }
@@ -220,7 +222,7 @@
     margin-left: calc(50% - 400px);
     /* background-color: yellowgreen; */
     color: white;
-    font-family: 'IBM Plex Sans', sans-serif;
+    font-family: 'Roboto Slab', serif;
     font-size: 52px;
     text-align: center;
 }
@@ -234,7 +236,7 @@
     margin-left: calc(50% - 400px);
     /* background-color: yellowgreen; */
     color: white;
-    font-family: 'IBM Plex Sans', sans-serif;
+    font-family: 'Roboto Slab', serif;
     font-size: 42px;
     text-align: center;
 }
@@ -264,7 +266,7 @@
     margin-top: 100px;
     margin-left: calc(50% - 125px);
     color: white;
-    font-family: 'IBM Plex Sans', sans-serif;
+    font-family: 'Roboto Slab', serif;
     font-size: 16px;
     display: flex;
     justify-content: center;

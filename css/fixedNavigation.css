@@ -1,4 +1,4 @@
-/* #fixedNavigation {
+#fixedNavigation {
     position: fixed;
     top: 0;
     left: 0;
@@ -10,23 +10,49 @@
     overflow: hidden;
 }
 
-#fixedNavigation .navigation {
-    margin-top: 10px;
-} */
+#fixedNavigation ul{
+    /* background-color: yellow; */
+    width: max-content;
+    height: 100%;
+    margin: auto;
+    position: relative;
+}
+
+#fixedNavigation ul li{   
+    position: relative;
+    display: inline;
+    line-height: 70px;
+    text-decoration: none;
+    list-style: none;
+    width: max-content;
+    padding-left: 50px;
+    padding-right: 50px;
+    color: white;
+    /* font-family: 'Amatic SC', cursive; */
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 16px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+#fixedNavigation ul li:hover{   
+    transition: .3s;
+    text-shadow: 0 0 10px white;
+}
 
 #toTop {
     position: fixed;
     bottom: 25px;
     right: 25px;
     border-radius: 50%;
-    border: 3px solid #A879F6;
+    border: 2px solid #A879F6;
     width: 50px;
     height: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
     color: #A879F6;
-    font-size: 30px;
+    font-size: 26px;
     z-index: 50;
     transition: .3s;
     cursor: pointer;
@@ -40,6 +66,12 @@
 }
 
 @media screen and (max-width: 1100px) {
+
+    #fixedNavigation ul li{   
+        padding-left: 10px;
+        padding-right: 10px;
+        font-size: 14px;
+    }
 
     #toTop {
         display: none;
