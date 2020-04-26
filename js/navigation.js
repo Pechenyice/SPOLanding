@@ -195,9 +195,9 @@ window.addEventListener('resize', () => {
 
         var mainButton = document.getElementById('mainBlockButton');
 
-        mainButton.addEventListener('click', () => {
+        mainButton.onclick =  () => {
             if (pageYOffset > mainBlockHeight + whyUsBlockHeight + aboutUsBlockHeight + graduateBlockHeight + programmBlockHeight + reviewBlockHeight + 200) scrollerTop(mainBlockHeight + whyUsBlockHeight + aboutUsBlockHeight + graduateBlockHeight + programmBlockHeight + reviewBlockHeight + 200); else scrollerBottom(mainBlockHeight + whyUsBlockHeight + aboutUsBlockHeight + graduateBlockHeight + programmBlockHeight + reviewBlockHeight + 150);
-        });
+        };
         
         var footerLinks = document.getElementById('footer-block-links').getElementsByTagName('ul')[0].getElementsByTagName('li');
 
@@ -442,9 +442,9 @@ window.onload = () => {
 
         var mainButton = document.getElementById('mainBlockButton');
 
-        mainButton.addEventListener('click', () => {
+        mainButton.onclick = () => {
             if (pageYOffset > mainBlockHeight + whyUsBlockHeight + aboutUsBlockHeight + graduateBlockHeight + programmBlockHeight + reviewBlockHeight + 200) scrollerTop(mainBlockHeight + whyUsBlockHeight + aboutUsBlockHeight + graduateBlockHeight + programmBlockHeight + reviewBlockHeight + 200); else scrollerBottom(mainBlockHeight + whyUsBlockHeight + aboutUsBlockHeight + graduateBlockHeight + programmBlockHeight + reviewBlockHeight + 200);
-        });
+        };
         
         var footerLinks = document.getElementById('footer-block-links').getElementsByTagName('ul')[0].getElementsByTagName('li');
 
