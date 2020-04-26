@@ -353,7 +353,7 @@
         width: 80%;
         margin: auto;
         height: 100%;
-        background-image: url(../img/itmo_logo.png);
+        background-image: url(../img/itmoBigLogo.png);
         background-size: contain;
         background-repeat: no-repeat;
         z-index: 1;
@@ -380,6 +380,13 @@
         font-size: 20px;
         margin-bottom: -3px;
         padding-bottom: 12px;
+        cursor: pointer;
+        transition: .3s;
+    }
+
+    .navigationText:hover {
+        transition: .3s;
+        text-shadow: 0 0 10px white;
     }
 
     .navigationTextActive {

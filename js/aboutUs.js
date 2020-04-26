@@ -11,7 +11,24 @@ var aboutBox = document.getElementById('aboutText');
 var handler = 0;
 var aboutTimer;
 
-approach.addEventListener('click', () => {
+approach.addEventListener('click', approacher);
+approach.addEventListener('dblclick', approacher);
+
+method.addEventListener('click', methoder);
+method.addEventListener('dblclick', methoder);
+
+it.addEventListener('click', iter);
+it.addEventListener('dblclick', iter);
+
+future.addEventListener('click', futurer);
+future.addEventListener('dblclick', futurer);
+
+format.addEventListener('click', formater);
+format.addEventListener('dblclick', formater);
+
+it.click();
+
+function approacher() {
     clearTimeout(aboutTimer);
     if (handler != 1) {
         switch (handler) {
@@ -57,9 +74,9 @@ approach.addEventListener('click', () => {
             aboutBox.style.opacity = 1;
         },300);
     }
-});
+}
 
-method.addEventListener('click', () => {
+function methoder() {
     clearTimeout(aboutTimer);
     if (handler != 2) {
         switch (handler) {
@@ -105,9 +122,9 @@ method.addEventListener('click', () => {
         },300);
        
     }
-});
+}
 
-it.addEventListener('click', () => {
+function iter() {
     clearTimeout(aboutTimer);
     if (handler != 3) {
         switch (handler) {
@@ -153,9 +170,9 @@ it.addEventListener('click', () => {
         },300);
         
     }
-});
+}
 
-future.addEventListener('click', () => {
+function futurer() {
     clearTimeout(aboutTimer);
     if (handler != 4) {
         switch (handler) {
@@ -201,9 +218,9 @@ future.addEventListener('click', () => {
         },300);
         
     }
-});
+}
 
-format.addEventListener('click', () => {
+function formater() {
     clearTimeout(aboutTimer);
     if (handler != 5) {
         switch (handler) {
@@ -249,6 +266,4 @@ format.addEventListener('click', () => {
         },300);
         
     }
-});
-
-it.click();
+}

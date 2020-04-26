@@ -420,6 +420,7 @@ const lessons = [
 // window.onload = () => {
 
     var timer;
+    var programmsContentTimer;
     var elems = document.getElementsByClassName('grided');
     var main = document.getElementById('programmInfo');
     var mainHint = document.getElementById('programmInfoText');
@@ -437,6 +438,7 @@ const lessons = [
 
     for (var elem of elems) {
         elem.addEventListener('mouseover', () => {
+            clearTimeout(programmsContentTimer);
             clearTimeout(timer);
             mainHint.style.opacity = '0';
             timer = setTimeout(() => {
@@ -444,6 +446,7 @@ const lessons = [
             }, 300);
         });
         elem.addEventListener('mouseleave', () => {
+            clearTimeout(programmsContentTimer);
             clearTimeout(timer);
             mainFull.style.opacity = '0';
             timer = setTimeout(() => {
@@ -498,7 +501,9 @@ const lessons = [
                     var section = document.getElementById('programmInfoFullSection');
                     var hours = document.getElementById('programmInfoFullHours');
                     var description = document.getElementById('programmInfoFullDescription');
-                    shower(div, i);
+                    // programmsContentTimer = setTimeout(() => {
+                        shower(div, i);
+                    // }, 300);
                     grid.append(div);
                     i++;
                 }
