@@ -108,7 +108,7 @@ div#programmBlockContent::before {
     content: '';
     /* background: linear-gradient(117.61deg, #C1C4D5 0%, #D9D0DC 100%); */
     background-color: #0B031A;
-    transform: skewY(7deg);
+    transform: skewY(6deg);
     z-index: 0;
     /* transform-origin: top left; */
 }
@@ -511,6 +511,39 @@ span.fakeLight {
 
 @media screen and (max-width: 1100px) {
     div#programmBlockContent::before {
+        height: 115%;
+        top: -105%;
+    }
+
+
+    #programmInfo {
         display: none;
     }
+
+    #programmBlockContent {
+        width: 375px;
+        margin: auto;
+    }
+
+    #programmBlockContentAbsoluted {
+        width: 375px;
+        margin: auto;
+    }
+
+    #programmBlockContent #mainContentSide {
+        width: 375px;
+        margin: auto;
+    }
+
+    #gridProgramms {
+        width: 375px;
+        margin: auto;
+        margin-top: 30px;
+        grid-gap: 10px;
+    }
+
+    #gridProgramms .grided {
+        font-size: 18px;
+    }
+
 }
