@@ -11,6 +11,8 @@ function adressResizeCheck() {
 
         document.getElementsByClassName('navigationText')[1].innerHTML = 'Навыки';
         document.getElementsByClassName('navigationText')[3].innerHTML = 'Выпускники';
+        document.getElementById('footer-block-links').getElementsByTagName('ul')[0].getElementsByTagName('li')[1].innerHTML = '<a href="javascript:0">НАВЫКИ</a>';
+        document.getElementById('footer-block-links').getElementsByTagName('ul')[0].getElementsByTagName('li')[3].innerHTML = '<a href="javascript:0">ВЫПУСКНИКИ</a>';
     
         document.getElementsByClassName('navigationText')[0].addEventListener('click', () => {
             mobileScrollerBottom(mobileMainBlockMobileVerHeight);
@@ -46,6 +48,8 @@ function adressResizeCheck() {
     } else {
         document.getElementsByClassName('navigationText')[1].innerHTML = 'Будущий выпускник';
         document.getElementsByClassName('navigationText')[3].innerHTML = 'Наши выпускники';
+        document.getElementById('footer-block-links').getElementsByTagName('ul')[0].getElementsByTagName('li')[1].innerHTML = '<a href="javascript:0">БУДУЩИЙ ВЫПУСКНИК</a>';
+        document.getElementById('footer-block-links').getElementsByTagName('ul')[0].getElementsByTagName('li')[3].innerHTML = '<a href="javascript:0">НАШИ ВЫПУСКНИКИ</a>';
     }
     
     var mobileNavigationTimer;

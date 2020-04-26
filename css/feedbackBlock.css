@@ -165,5 +165,11 @@
 	position: absolute;
 	top: -50px;
 	right: -150px;
-	background: linear-gradient(90.88deg, rgba(56, 80, 152, 0.6) 1.39%, rgba(133, 56, 152, 0.6) 175.35%);
+	background: linear-gradient(90.88deg, rgba(56, 80, 152, 0.3) 1.39%, rgba(133, 56, 152, 0.3) 175.35%);
+}
+
+@media screen and (max-width: 1100px) {
+	.feedbackAbsolutedCircles {
+		top: -250px;
+	}
 }
