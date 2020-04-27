@@ -440,16 +440,20 @@ const lessons = [
         elem.addEventListener('mouseover', () => {
             clearTimeout(programmsContentTimer);
             clearTimeout(timer);
+            mainHint.style.transition = '0s';
             mainHint.style.opacity = '0';
             timer = setTimeout(() => {
+                mainFull.style.transition = '.3s';
                 mainFull.style.opacity = '1';
             }, 300);
         });
         elem.addEventListener('mouseleave', () => {
             clearTimeout(programmsContentTimer);
             clearTimeout(timer);
+            mainFull.style.transition = '0s';
             mainFull.style.opacity = '0';
             timer = setTimeout(() => {
+                mainHint.style.transition = '.3s';
                 mainHint.style.opacity = '1';
             }, 300);
         });
