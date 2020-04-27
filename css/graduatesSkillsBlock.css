@@ -48,6 +48,37 @@
 	background: linear-gradient(90.93deg, rgba(56, 80, 152, 0.2) 1.39%, rgba(133, 56, 152, 0.2) 175.35%);
 }
 
+.skillsAbsolutedCircles:nth-child(7) {
+	width: 100px;
+	height: 100px;
+	bottom: 550px;
+	right: 100px;
+	background: linear-gradient(90.93deg, rgba(56, 80, 152, 0.2) 1.39%, rgba(133, 56, 152, 0.2) 175.35%);
+}
+
+.skillsAbsolutedCircles:nth-child(8) {
+	left: 200px;
+	bottom: 600px;
+}
+
+.skillsAbsolutedCircles:nth-child(9) {
+	width: 100px;
+	height: 100px;
+	bottom: 900px;
+	left: 150px;
+	background: linear-gradient(90.93deg, rgba(56, 80, 152, 0.2) 1.39%, rgba(133, 56, 152, 0.2) 175.35%);
+}
+
+.skillsAbsolutedCircles:nth-child(10) {
+	left: 50px;
+	bottom: 400px;
+}
+
+.skillsAbsolutedCircles:nth-child(11) {
+	top: 450px;
+	right: 75px;
+}
+
 #graduates-skills-block {
 	z-index: 1;
 	width: 900px;
@@ -289,17 +320,6 @@
 	}
 }
 
-.skillsAbsolutedCircles:nth-child(7) {
-	display: none;
-}
-
-.skillsAbsolutedCircles:nth-child(8) {
-	display: none;
-}
-
-.skillsAbsolutedCircles:nth-child(9) {
-	display: none;
-}
 
 @media screen and (max-width: 1100px) {
 
@@ -344,7 +364,6 @@
 	}
 
 	.skillsAbsolutedCircles:nth-child(7) {
-		display: block;
 		display: block;
 		width: 175px;
 		height: 175px;

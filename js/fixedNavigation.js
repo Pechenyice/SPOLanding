@@ -1,5 +1,20 @@
 var nav = document.getElementById('fixedNavigation');
 var scrollTopPrev = 0;
+var wasTriggeredOffer = 0;
+
+document.body.addEventListener('mousemove', reseter);
+
+function reseter(event) {
+    if (event.pageY - pageYOffset < 70) {
+        clearTimeout(hiddenNavTimer);
+        wasTriggeredOffer = 1;
+     } else if (wasTriggeredOffer) {
+        hiddenNavTimer = setTimeout(() => {
+            nav.style.height = 0 + 'px';
+        }, 1500);
+        wasTriggeredOffer = 0;
+    }
+}
 
 document.addEventListener('scroll', fixedNavigation);
 
