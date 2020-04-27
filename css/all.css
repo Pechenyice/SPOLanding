@@ -64,7 +64,48 @@ body {
     transition: .3s;
 } */
 
+#mobileScreamer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    height: max-content;
+    font-family: 'Amatic SC', serif;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #140828;
+    color: white;
+    z-index: 100;
+    text-align: center;
+    transition: .3s;
+    overflow: hidden !important;
+    display: none;
+}
+
+#screamerClose {
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    transition: .3s;
+    cursor: pointer;
+}
+
+#screamerClose:hover {
+    transition: .3s;
+    text-shadow: 0 0 5px white;
+}
+
 @media screen and (max-width: 1100px) {
+    #mobileScreamer {
+        display: block;
+    }
+
     .blockLogo h1 {
         margin: 0;
         padding: 0;
