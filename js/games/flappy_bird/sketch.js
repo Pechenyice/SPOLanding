@@ -252,16 +252,32 @@ function loadScores() {
   birds[0].brain.output_nodes = bestScores.output_nodes;
 
   birds[0].brain.weights_ih = new Matrix(bestScores.hidden_nodes, bestScores.input_nodes);
-  
   for (var i = 0; i < bestScores.hidden_nodes; i++)
   {
     for (var j = 0; j < bestScores.input_nodes; j++)
     {
+      birds[0].brain.weights_ih.data[i][j] = bestScores.weights_ih.data[i][j];
     }
   }
 
-  this.weights_ho = new Matrix(this.output_nodes, this.hidden_nodes);
+  birds[0].brain.weights_ho = new Matrix(bestScores.output_nodes, bestScores.hidden_nodes);
+  for (var i = 0; i < bestScores.output_nodes; i++)
+  {
+    for (var j = 0; j < bestScores.hidden_nodes; j++)
+    {
+      birds[0].brain.weights_ho.data[i][j] = bestScores.weights_ho.data[i][j];
+    }
+  }
 
+  birds[0].brain.bias_h = new Matrix(birds[0].brain.hidden_nodes, 1);
+  // birds[0].brain.bias_h.data = bestScores.bias_h.data;
+  for (var i = 0; i < birds[0].hidden_nodes; i++)
+    birds[0].brain.bias_h.data[i][0] = bestScores.bias_h.data[i];
+
+  birds[0].brain.bias_o = new Matrix(birds[0].brain.output_nodes, 1);
+  // birds[0].brain.bias_o.data = bestScores.bias_o.data;
+  for (var i = 0; i < birds[0].output_nodes; i++)
+    birds[0].brain.bias_o.data[i][0] = bestScores.bias_o.data[i];
 
 
   populationText.html("Популяция: 1");
