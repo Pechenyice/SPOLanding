@@ -2,7 +2,7 @@
 document.getElementById('feedback-block-submit').onclick = (e) => {
     e.preventDefault();
     var xhr = new XMLHttpRequest();
-    xhr.open('GET', 'http://spoconnection-rating-server.herokuapp.com/email?email=' +
+    xhr.open('GET', 'https://spoconnection-rating-server.herokuapp.com/email?email=' +
     document.getElementById('feedback-block-input').value);
 
     // xhr.setRequestHeader('access-control-allow-origin', '*');
