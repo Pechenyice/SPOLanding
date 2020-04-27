@@ -37,7 +37,7 @@
 
 #fixedNavigation ul li:hover{   
     transition: .3s;
-    text-shadow: 0 0 10px white;
+    color: #853898;
 }
 
 #toTop {

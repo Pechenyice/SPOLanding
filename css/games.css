@@ -35,9 +35,6 @@
 
 }
 
-.littleButton {
-}
-
 #readyStateButton {
 	background-color: #0D041F;
 	border: 2px solid rgb(133, 56, 152);
@@ -60,7 +57,7 @@
 
 #readyStateButton:hover {
 	background-color: #853898;
-	color: white;
+	color: #140828;
 	transition: .3s;
 }
 
@@ -118,7 +115,7 @@
 }
 
 .littleButton:hover {
-	color: white;
+	color: #140828;
 	background-color: #853898;
 	transition: .3s;
 }
