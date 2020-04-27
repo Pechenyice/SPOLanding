@@ -146,188 +146,164 @@ var bestScores = {
   activation_function: {}
 }
 
-// var startButton = document.getElementById("games-start-button");
-// console.log(startButton);
-// startButton.onclick = pause();
+var drawFunction = function () {
+    for (let n = 0; n < slider.value(); n++) {
+        if (counter % 75 == 0) {
+            pipes.push(new Pipe());
+        }
+        counter++;
 
-var draw;
-// pause();
+        for (let i = pipes.length - 1; i >= 0; i--) {
+            pipes[i].update();
+
+            for (let j = birds.length - 1; j >= 0; j--) {
+                if (pipes[i].hits(birds[j])) {
+                    savedBirds.push(birds.splice(j, 1)[0]);
+                }
+            }
+
+            if (pipes[i].offscreen()) {
+                pipes.splice(i, 1);
+            }
+        }
+
+        for (let i = birds.length - 1; i >= 0; i--) {
+            if (birds[i].offScreen()) {
+                savedBirds.push(birds.splice(i, 1)[0]);
+            }
+        }
+
+        for (let bird of birds) {
+            bird.think(pipes);
+            bird.update();
+        }
+
+        if (birds.length === 0) {
+            counter = 0;
+            nextGeneration();
+            populations++;
+            populationText.html("Популяция: " + populations);
+            pipes = [];
+        }
+    }
+
+    background(color(28, 15, 52));
+    for (let bird of birds) { bird.show(); }
+    for (let pipe of pipes) { pipe.show(); }
+}
+
+var draw = () => {};
 
 function start() {
-  var btn = document.getElementById("games-start-button");
-  btn.innerHTML = "<i class=\"fas fa-pause\"></i>";
-  btn.onclick = pause;
+    var btn = document.getElementById("games-start-button");
+    btn.innerHTML = "<i class=\"fas fa-pause\"></i>";
+    btn.onclick = pause;
 
-  draw = function () {
-    for (let n = 0; n < slider.value(); n++) {
-      if (counter % 75 == 0) {
-        pipes.push(new Pipe());
-      }
-      counter++;
-
-      for (let i = pipes.length - 1; i >= 0; i--) {
-        pipes[i].update();
-
-        for (let j = birds.length - 1; j >= 0; j--) {
-          if (pipes[i].hits(birds[j])) {
-            savedBirds.push(birds.splice(j, 1)[0]);
-          }
-        }
-
-        if (pipes[i].offscreen()) {
-          pipes.splice(i, 1);
-        }
-      }
-
-      for (let i = birds.length - 1; i >= 0; i--) {
-        if (birds[i].offScreen()) {
-          savedBirds.push(birds.splice(i, 1)[0]);
-        }
-      }
-
-      for (let bird of birds) {
-        bird.think(pipes);
-        bird.update();
-      }
-
-      if (birds.length === 0) {
-        counter = 0;
-        nextGeneration();
-        populations++;
-        populationText.html("Популяция: " + populations);
-        pipes = [];
-      }
-    }
-
-    // All the drawing stuff
-    background(color(28, 15, 52));
-
-    for (let bird of birds) {
-      bird.show();
-    }
-
-    for (let pipe of pipes) {
-      pipe.show();
-    }
-  }
+    draw = drawFunction;
 }
 
 function pause() {
-  var btn = document.getElementById("games-start-button");
+    var btn = document.getElementById("games-start-button");
+    btn.innerHTML = "<i class=\"fas fa-play\"></i>";
+    btn.onclick = start;
 
-  btn.innerHTML = "<i class=\"fas fa-play\"></i>";
-  btn.onclick = start;
-
-  draw = () => {};
+    draw = () => {};
 }
 
 function reset() {
-  
-  birds = [];
-  savedBirds = [];
-  pipes = [];
-  counter = 0;
-  populations = 1;
+    birds = [];
+    savedBirds = [];
+    pipes = [];
+    counter = 0;
+    populations = 1;
 
-  for (let i = 0; i < TOTAL; i++) {
-    birds[i] = new Bird();
-  }
+    for (let i = 0; i < TOTAL; i++) { birds[i] = new Bird(); }
 
-  populationText.html("Популяция: 1");
-  start();
-
+    populationText.html("Популяция: 1");
+    start();
 }
 
 function loadScores() {
   
-  birds = [];
-  savedBirds = [];
-  pipes = [];
-  counter = 0;
-  populations = 1;
+    birds = [];
+    savedBirds = [];
+    pipes = [];
+    counter = 0;
+    populations = 1;
 
-  birds[0] = new Bird();
+    populationText.html("Популяция: 1");
 
-  birds[0].brain.input_nodes = bestScores.input_nodes;
-  birds[0].brain.hidden_nodes = bestScores.hidden_nodes;
-  birds[0].brain.output_nodes = bestScores.output_nodes;
+    birds[0] = new Bird();
 
-  birds[0].brain.weights_ih = new Matrix(bestScores.hidden_nodes, bestScores.input_nodes);
-  for (var i = 0; i < bestScores.hidden_nodes; i++)
-  {
-    for (var j = 0; j < bestScores.input_nodes; j++)
+    birds[0].brain.input_nodes = bestScores.input_nodes;
+    birds[0].brain.hidden_nodes = bestScores.hidden_nodes;
+    birds[0].brain.output_nodes = bestScores.output_nodes;
+
+    birds[0].brain.weights_ih = new Matrix(bestScores.hidden_nodes, bestScores.input_nodes);
+    for (var i = 0; i < bestScores.hidden_nodes; i++)
     {
-      birds[0].brain.weights_ih.data[i][j] = bestScores.weights_ih.data[i][j];
+        for (var j = 0; j < bestScores.input_nodes; j++) 
+            birds[0].brain.weights_ih.data[i][j] = bestScores.weights_ih.data[i][j];
     }
-  }
 
-  birds[0].brain.weights_ho = new Matrix(bestScores.output_nodes, bestScores.hidden_nodes);
-  for (var i = 0; i < bestScores.output_nodes; i++)
-  {
-    for (var j = 0; j < bestScores.hidden_nodes; j++)
+    birds[0].brain.weights_ho = new Matrix(bestScores.output_nodes, bestScores.hidden_nodes);
+    for (var i = 0; i < bestScores.output_nodes; i++)
     {
-      birds[0].brain.weights_ho.data[i][j] = bestScores.weights_ho.data[i][j];
+        for (var j = 0; j < bestScores.hidden_nodes; j++)
+            birds[0].brain.weights_ho.data[i][j] = bestScores.weights_ho.data[i][j];
     }
-  }
 
-  birds[0].brain.bias_h = new Matrix(birds[0].brain.hidden_nodes, 1);
-  // birds[0].brain.bias_h.data = bestScores.bias_h.data;
-  for (var i = 0; i < birds[0].hidden_nodes; i++)
-    birds[0].brain.bias_h.data[i][0] = bestScores.bias_h.data[i];
+    birds[0].brain.bias_h = new Matrix(birds[0].brain.hidden_nodes, 1);
+    for (var i = 0; i < birds[0].hidden_nodes; i++)
+        birds[0].brain.bias_h.data[i][0] = bestScores.bias_h.data[i];
 
-  birds[0].brain.bias_o = new Matrix(birds[0].brain.output_nodes, 1);
-  // birds[0].brain.bias_o.data = bestScores.bias_o.data;
-  for (var i = 0; i < birds[0].output_nodes; i++)
-    birds[0].brain.bias_o.data[i][0] = bestScores.bias_o.data[i];
+    birds[0].brain.bias_o = new Matrix(birds[0].brain.output_nodes, 1);
+    for (var i = 0; i < birds[0].output_nodes; i++)
+        birds[0].brain.bias_o.data[i][0] = bestScores.bias_o.data[i];
 
-
-  populationText.html("Популяция: 1");
-  start();  
-
+    start();  
 }
 
-// function keyPressed() {
-//   if (key === 'S') {
-//     let bird = birds[0];
-//     saveJSON(bird.brain, 'bird.json');
-//   }
-// }
+function keyPressed() {
+  if (key === 'S') {
+    let bird = birds[0];
+    saveJSON(bird.brain, 'bird.json');
+  }
+}
 
 function setup() {
-  var canvas = createCanvas(640, 480);
-  slider = createSlider(1, 10, 1);
-  populationText = createP("Популяция: 1");
-  neuralSpeed = createP("Скорость обучения: 1x");
+    var canvas = createCanvas(640, 480);
+    canvas.parent("games-canvas");
 
-  canvas.parent("games-canvas");
-  slider.addClass("neuralSlider");
-  slider.parent("games-info");
-  document.getElementsByClassName("neuralSlider")[0].addEventListener('input', () => {
-    neuralSpeed.html("Скорость обучения: " + slider.value() + "x");
-  });
-  populationText.addClass("neuralPopulation");
-  populationText.parent("games-info");
-  neuralSpeed.addClass("neuralSpeedPopulation");
-  neuralSpeed.parent("games-info");
+    slider = createSlider(1, 10, 1);
+    slider.parent("games-info");
+    slider.addClass("neuralSlider");
 
-  for (let i = 0; i < TOTAL; i++) {
-    birds[i] = new Bird();
-  }
+    populationText = createP("Популяция: 1");
+    populationText.parent("games-info");
+    populationText.addClass("neuralPopulation");
 
-  background(color(28, 15, 52));
+    neuralSpeed = createP("Скорость обучения: 1x");
+    neuralSpeed.parent("games-info");
+    neuralSpeed.addClass("neuralSpeedPopulation");
 
-  for (let bird of birds) {
-    bird.show();
-  }
+    document.getElementsByClassName("neuralSlider")[0].addEventListener('input', () => {
+        neuralSpeed.html("Скорость обучения: " + slider.value() + "x");
+    });
 
-  for (let pipe of pipes) {
-    pipe.show();
-  }
+    background(color(28, 15, 52));
+
+    for (let i = 0; i < TOTAL; i++) { birds[i] = new Bird(); }
+    for (let bird of birds) { bird.show(); }
+
+    for (let i = 0; i < 1; i++) {
+        var newPipe = new Pipe();
+        newPipe.top = random(height / 6, (3 / 4) * height);
+        newPipe.bottom = height - (newPipe.top + newPipe.spacing);
+        newPipe.x = width - newPipe.w * 4 + random(-100, 100); 
+
+        pipes.push(newPipe);
+    }
+
+    for (let pipe of pipes) { pipe.show(); }
 }
-
-// function keyPressed() {
-//   if (key == ' ') {
-//     bird.up();
-//     //console.log("SPACE");
-//   }
-// }
