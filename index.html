@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link rel="shortcut icon" href="img/favicon.svg" type="image/x-icon">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap" rel="stylesheet">
@@ -37,7 +38,7 @@
     <script src="js/games/flappy_bird/bird.js"></script>
     <script src="js/games/flappy_bird/pipe.js"></script>
 
-    <title>Топ лендинг</title>
+    <title>FSPO.ITMO</title>
 </head>
 <body>
     <div id="main">
@@ -45,6 +46,22 @@
         <div id="mobileScreamer">
             <p>Мы не используем cookie-файлы, но для создания полноценного впечатления<br/> рекомендуем вам попробовать версию сайта для <span class="veryImportantWord">широких устройств!</span></p>
             <p id="screamerClose" onclick="document.getElementById('mobileScreamer').style.display='none'"><i class="fas fa-times"></i></p>
+        </div>
+
+        <div id="mailFailMessageBlock">
+            <div id="mailFailMessageBlockContent">
+                <p id="mailFailMessageBlockContentMain"><i class="fas fa-exclamation"></i></p>
+                <p id="mailFailMessageBlockContentClose" onclick="document.getElementById('mailFailMessageBlock').style.display='none'"><i class="fas fa-times"></i></p>
+                <p id="mailFailMessageBlockContentText">Что-то пошло не так!</p>
+            </div>
+        </div>
+
+        <div id="mailCorrectMessageBlock">
+            <div id="mailCorrectMessageBlockContent">
+                <p id="mailCorrectMessageBlockContentMain"><i class="fas fa-envelope-open-text"></i></p>
+                <p id="mailCorrectMessageBlockContentClose" onclick="document.getElementById('mailCorrectMessageBlock').style.display='none'"><i class="fas fa-times"></i></p>
+                <p id="mailCorrectMessageBlockContentText">Письмо отправлено!</p>
+            </div>
         </div>
 
         <div id="fixedNavigation">
@@ -520,17 +537,11 @@
                     На нашем факультете ты не просто получишь профессию, 
                     но научишься ПРОГРАММИРОВАТЬ :)
                 </div>
-            </div>        
-            <!-- <div id="games">
-                <div id="games-canvas">
-                    
-                </div>
-                <div id="games-info">
-                    <button id="games-start-button" onclick="start()">Начать</button>
-                    <button onclick="reset()">Перезапустить</button>
-                    <button onclick="loadScores()">Загрузить обученную нейронную сеть</button>
-                </div>
-            </div>        -->
+            </div>    
+            
+            <div id="littleDeviaceAdvice">
+                <p>Здесь мог быть пример работы нейронной сети, которую вы сможете написать, но мы заботимся о ресурсах вашего мобильного устройства</p>
+            </div>
         </div>
 
         <div id="programmBlock">
@@ -812,5 +823,6 @@
     <script src="js/graduate.js"></script>
     <script src="js/parallax.js"></script>
     <script src="js/fixedNavigation.js"></script>
+    <script src="js/mailRequest.js"></script>
 </body>
 </html>

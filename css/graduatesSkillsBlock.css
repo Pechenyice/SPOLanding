@@ -345,7 +345,7 @@
 	}
 
 	.skillsAbsolutedCircles:nth-child(4) {
-		left: 370px;
+		left: 650px;
 		top: 300px;
 	}
 
@@ -367,7 +367,7 @@
 		display: block;
 		width: 175px;
 		height: 175px;
-		top: 200px;
+		top: 700px;
 		right: 100px;
 		background: linear-gradient(90.93deg, rgba(56, 80, 152, 0.2) 1.39%, rgba(133, 56, 152, 0.2) 175.35%);
 	}
@@ -387,12 +387,29 @@
 		bottom: 120px;
 	}
 
+	#littleDeviaceAdvice {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: 300px;
+		height: 200px;
+		margin: auto;
+		margin-top: 50px;
+		background-color: #1B1030;	
+		border: 15px solid #140828;
+		color: #853898;
+        font-family: 'Roboto Slab', serif;
+		font-size: 18px;
+		text-align: center;
+		padding: 10px;
+	}
+
 	#graduates-skills-block-mobile {
 		display: block;
 		background-color: #0B031A;
 		overflow: hidden;
 		padding-bottom: 20px;
-		height: 820px;
+		height: 1120px;
 		z-index: 1;
 		position: relative;
 	}

@@ -570,8 +570,8 @@ span.fakeLight {
     }
 
     div#programmBlockContent::before {
-        height: 95%;
-        top: -87.5%;
+        height: 120%;
+        top: -115%;
     }
 
 
