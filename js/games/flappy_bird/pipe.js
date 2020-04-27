@@ -18,8 +18,9 @@ class Pipe {
   }
 
   show() {
-    fill(255);
+    fill(color(59, 60, 127));
     rectMode(CORNER);
+    noStroke();
     rect(this.x, 0, this.w, this.top);
     rect(this.x, height - this.bottom, this.w, this.bottom);
   }

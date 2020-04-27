@@ -35,7 +35,7 @@ function imgParallax(event) {
 
 function backParallax(event) {
     if (pageYOffset < 1000) {
-        imgParallaxed.style.transform = 'translateY(' + pageYOffset*0.3+'px)';
+        // imgParallaxed.style.transform = 'translateY(' + pageYOffset*0.3+'px)';
         // document.getElementById('mainBlockMax').style.marginTop = 100 + pageYOffset * 0.3 + 'px';
     }
 

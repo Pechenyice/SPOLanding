@@ -422,8 +422,27 @@
                             <p>Тестировщик</p> 
                             <img src="img/tester.png" />
                         </div>
-                    </div>                    
+                    </div>  
+             
                 </div>
+                <div id="games">
+
+                    <div class="blockLogo">
+                        <h1>Ваша будущая нейронная сеть</h1>
+                        <div id="firstUnderline"></div>
+                        <div id="secondUnderline"></div>
+                    </div>
+
+                    <div id="games-canvas">
+                        
+                    </div>
+                    <div id="games-info">
+                        <button class="littleButton" id="games-start-button" onclick="start()"><i class="fas fa-play"></i></button>
+                        <button class="littleButton" onclick="reset()"><i class="fas fa-undo-alt"></i></button>
+                        <button id="readyStateButton" onclick="loadScores()">Загрузить обученную нейронную сеть</button>
+                        <!-- <p id="neuralSpeedPopulation">Скорость обучения:</p> -->
+                    </div>
+                </div>    
             </div>
         </div>
 
@@ -490,7 +509,17 @@
                     На нашем факультете ты не просто получишь профессию, 
                     но научишься ПРОГРАММИРОВАТЬ :)
                 </div>
-            </div>               
+            </div>        
+            <!-- <div id="games">
+                <div id="games-canvas">
+                    
+                </div>
+                <div id="games-info">
+                    <button id="games-start-button" onclick="start()">Начать</button>
+                    <button onclick="reset()">Перезапустить</button>
+                    <button onclick="loadScores()">Загрузить обученную нейронную сеть</button>
+                </div>
+            </div>        -->
         </div>
 
         <div id="programmBlock">
@@ -600,17 +629,6 @@
                     </div>
                 </div>
             </div>
-            </div>
-        </div>
-
-        <div id="games">
-            <div id="games-canvas">
-                
-            </div>
-            <div id="games-info">
-                <button id="games-start-button" onclick="start()">Начать</button>
-                <button onclick="reset()">Перезапустить</button>
-                <button onclick="loadScores()">Загрузить обученную нейронную сеть</button>
             </div>
         </div>
 

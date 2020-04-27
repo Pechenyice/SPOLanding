@@ -1,4 +1,219 @@
 #games {
-	margin-top: 400px;
-	margin-bottom: 400px;
+	margin: 0 auto;
 }
+
+#games .blockLogo{
+	margin-top: -70px;
+}
+
+#games-info {
+	width: 640px;
+	height: 50px;
+	/* background-color: tomato; */
+	margin: auto;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+}
+
+#games-canvas {
+	/* box-sizing: border-box;
+	border: 10px solid #1B1030; */
+	margin: auto;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 20px;
+}
+
+#defaultCanvas0 {
+	border: 15px solid #150A2B;
+}
+
+#games-start-button {
+
+}
+
+.littleButton {
+}
+
+#readyStateButton {
+	background-color: #0D041F;
+	border: 2px solid rgb(133, 56, 152);
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: max-content;
+	height: max-content;
+	padding-left: 70px !important;
+	padding-right: 70px !important;
+	padding-top: 5px !important;
+	padding-bottom: 5px !important;
+	color: #853898;
+	font-size: 16px;
+	/* font-family: 'Amatic SC', cursive; */
+	font-family: 'Roboto Slab', serif;
+	transition: .3s;
+	cursor: pointer;
+}
+
+#readyStateButton:hover {
+	background-color: #853898;
+	color: white;
+	transition: .3s;
+}
+
+.neuralSlider {
+	position: absolute;
+	bottom: -30px;
+	right: 0;
+	width: 456px !important;
+	border-radius: 50%;
+	height: max-content;
+}
+
+.neuralPopulation {
+	position: absolute;
+	bottom: -80px;
+	left: 0;
+	color: #853898;
+	font-size: 16px;
+	/* font-family: 'Amatic SC', cursive; */
+	font-family: 'Roboto Slab', serif;
+}
+
+.neuralSpeedPopulation {
+	position: absolute;
+	bottom: -80px;
+	right: 0;
+	color: #853898;
+	font-size: 16px;
+	/* font-family: 'Amatic SC', cursive; */
+	font-family: 'Roboto Slab', serif;
+	text-align: right;
+}
+
+.littleButton {
+	width: 70px;
+	height: 70px;
+	background-color: #0D041F;
+	border: 2px solid #853898;
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: #853898;
+	font-size: 16px;
+	/* font-family: 'Amatic SC', cursive; */
+	font-family: 'IBM Plex Sans', sans-serif;
+	transition: .3s;
+	cursor: pointer;
+}
+
+.littleButton:nth-child(2) {
+	left: 90px;
+}
+
+.littleButton:hover {
+	color: white;
+	background-color: #853898;
+	transition: .3s;
+}
+
+
+
+
+
+
+
+
+
+
+input[type=range] {
+	-webkit-appearance: none;
+	width: 100%;
+	margin: 11.3px 0;
+	}
+	input[type=range]:focus {
+	outline: none;
+	}
+	input[type=range]::-webkit-slider-runnable-track {
+	width: 100%;
+	height: 8.4px;
+	cursor: pointer;
+	box-shadow: 0px 0px 0px #000000, 0px 0px 0px #0d0d0d;
+	background: #853898;
+	border-radius: 3px;
+	border: 0px solid #010101;
+	}
+	input[type=range]::-webkit-slider-thumb {
+	box-shadow: 0px 0px 0px #000000, 0px 0px 0px #0d0d0d;
+	border: 0px solid #cccccc;
+	height: 31px;
+	width: 20px;
+	border-radius: 0px;
+	background: #3b3c7f;
+	cursor: pointer;
+	-webkit-appearance: none;
+	margin-top: -11.3px;
+	}
+	input[type=range]:focus::-webkit-slider-runnable-track {
+	background: #953fab;
+	}
+	input[type=range]::-moz-range-track {
+	width: 100%;
+	height: 8.4px;
+	cursor: pointer;
+	box-shadow: 0px 0px 0px #000000, 0px 0px 0px #0d0d0d;
+	background: #853898;
+	border-radius: 3px;
+	border: 0px solid #010101;
+	}
+	input[type=range]::-moz-range-thumb {
+	box-shadow: 0px 0px 0px #000000, 0px 0px 0px #0d0d0d;
+	border: 0px solid #cccccc;
+	height: 31px;
+	width: 20px;
+	border-radius: 0px;
+	background: #3b3c7f;
+	cursor: pointer;
+	}
+	input[type=range]::-ms-track {
+	width: 100%;
+	height: 8.4px;
+	cursor: pointer;
+	background: transparent;
+	border-color: transparent;
+	color: transparent;
+	}
+	input[type=range]::-ms-fill-lower {
+	background: #753185;
+	border: 0px solid #010101;
+	border-radius: 6px;
+	box-shadow: 0px 0px 0px #e0acac, 0px 0px 0px #0d0d0d;
+	}
+	input[type=range]::-ms-fill-upper {
+	background: #853898;
+	border: 0px solid #010101;
+	border-radius: 6px;
+	box-shadow: 0px 0px 0px #000000, 0px 0px 0px #0d0d0d;
+	}
+	input[type=range]::-ms-thumb {
+	box-shadow: 0px 0px 0px #000000, 0px 0px 0px #0d0d0d;
+	border: 0px solid #cccccc;
+	height: 31px;
+	width: 20px;
+	border-radius: 0px;
+	background: #3b3c7f;
+	cursor: pointer;
+	height: 8.4px;
+	}
+	input[type=range]:focus::-ms-fill-lower {
+	background: #853898;
+	}
+	input[type=range]:focus::-ms-fill-upper {
+	background: #953fab;
+	}

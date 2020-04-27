@@ -1,4 +1,4 @@
-const TOTAL = 250;
+const TOTAL = 100;
 let birds = [];
 let savedBirds = [];
 let pipes = [];
@@ -6,6 +6,7 @@ let counter = 0;
 let slider;
 let populationText;
 let populations = 1;
+let neuralSpeed;
 
 var bestScores = {
   input_nodes: 5,
@@ -154,7 +155,7 @@ var draw;
 
 function start() {
   var btn = document.getElementById("games-start-button");
-  btn.innerHTML = "Пауза";
+  btn.innerHTML = "<i class=\"fas fa-pause\"></i>";
   btn.onclick = pause;
 
   draw = function () {
@@ -199,7 +200,7 @@ function start() {
     }
 
     // All the drawing stuff
-    background(0);
+    background(color(28, 15, 52));
 
     for (let bird of birds) {
       bird.show();
@@ -214,7 +215,7 @@ function start() {
 function pause() {
   var btn = document.getElementById("games-start-button");
 
-  btn.innerHTML = "Продолжить";
+  btn.innerHTML = "<i class=\"fas fa-play\"></i>";
   btn.onclick = start;
 
   draw = () => {};
@@ -295,17 +296,25 @@ function loadScores() {
 function setup() {
   var canvas = createCanvas(640, 480);
   slider = createSlider(1, 10, 1);
-  populationText = createP("Полпуляция: 1");
+  populationText = createP("Популяция: 1");
+  neuralSpeed = createP("Скорость обучения: 1x");
 
   canvas.parent("games-canvas");
+  slider.addClass("neuralSlider");
   slider.parent("games-info");
+  document.getElementsByClassName("neuralSlider")[0].addEventListener('input', () => {
+    neuralSpeed.html("Скорость обучения: " + slider.value() + "x");
+  });
+  populationText.addClass("neuralPopulation");
   populationText.parent("games-info");
+  neuralSpeed.addClass("neuralSpeedPopulation");
+  neuralSpeed.parent("games-info");
 
   for (let i = 0; i < TOTAL; i++) {
     birds[i] = new Bird();
   }
 
-  background(0);
+  background(color(28, 15, 52));
 
   for (let bird of birds) {
     bird.show();
